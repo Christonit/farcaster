@@ -1,21 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      white: '#fff',
-      blue: {
-        500: '#0152ff',
-      },
-      slate: {
-        950: "#030712",
-        900: '#111827',
-        800: '#1f2937',
-        100: '#f1f5f9'
-      }
-    },
     extend: {},
   },
   plugins: [],

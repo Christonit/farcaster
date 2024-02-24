@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -38,9 +39,7 @@ const Header = () => {
         </div>
 
         <div className="loginSection hideOnMobile">
-          <a href="#" className="loginLink">
-            Log in →
-          </a>
+          <ConnectButton />
         </div>
       </nav>
 
