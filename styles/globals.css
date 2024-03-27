@@ -378,14 +378,15 @@ p {
 .advert-image {
   width: 100%;
   max-width: 760px;
-  border-radius: 32px;
-  overflow: hidden;
 }
 
 .advert-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 32px;
+  position: relative;
+  z-index: 1;
 
 }
 
@@ -439,8 +440,8 @@ p {
 #promotion-banner::before {
   content: "";
   height: 100%;
-  background: rgb(52, 74, 251);
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(1, 16, 130, 0.95) 100%);
+  /* background: rgb(52, 74, 251); */
+  /* background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(1, 16, 130, 0.95) 100%); */
   position: absolute;
   top: 0;
   width: 100%;
@@ -450,11 +451,32 @@ p {
 #promotion-banner {
   height: auto;
   min-height: 600px;
-  background-image: url('https://pbs.twimg.com/profile_banners/1768729781535744000/1710534105/1500x500');
-  background-position: center;
+
+  position: relative;
+}
+
+#promotion-banner-main img {
+  object-fit: cover;
+  width: 100%;
+}
+
+#promotion-banner::before {
+  /* background-image: url('../public/images/frame_7_zoomed_hires.jpg'); */
+  /* background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  content: "";
+  left: "";
+  right: "";
+  height: 100%;
+  width: 100%;
+  opacity: 0.75; */
+  /* background-blend-mode: hard-light; */
 }
 
 .promotion-block h2 {}
@@ -468,4 +490,108 @@ p {
   position: relative;
   z-index: 2;
 
+
+}
+
+.fluid-gradient {
+  position: relative;
+}
+
+.fluid-gradient-left img {
+  left: -12px;
+  top: -12px;
+}
+
+.fluid-gradient-right img {
+  right: -12px;
+  top: -12px;
+}
+
+.fluid-gradient-left::before {
+  background: linear-gradient(-45deg, #2863E8, #E4DDBC, #0050FF, #DDA43A);
+  background-size: 400% 400%;
+  content: "";
+  left: 24px;
+  top: 24px;
+}
+
+.fluid-gradient-right::before {
+  background: linear-gradient(-45deg, #2863E8, #E4DDBC, #0050FF, #DDA43A);
+  background-size: 400% 400%;
+  content: "";
+  right: 24px;
+  top: 24px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fluid-gradient::before {
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  border-radius: 20px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.grid-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+.grid-2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+
+.grid-3 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+
+}
+
+.grid-item {
+  height: max-content;
 }
