@@ -12,9 +12,6 @@ import type { Metadata } from "next";
 import AnimatedBackground from "../src/components/animated-background";
 import GridGallery from "../src/components/grid-gallery";
 import FeaturesGrid from "../src/components/features-grid";
-import ProtoFemale from "../public/images/proto_female_costume_teaser.gif";
-import GaiasConcept from "../public/images/frame-7.gif";
-import GaiasConceptJpg from "../public/images/gaias_concept_01.jpg";
 export async function generateMetadata(): Promise<Metadata> {
   const frameTags = await getFrameMetadata(
     `${process.env.VERCEL_URL || "http://localhost:3000"}/api`
@@ -98,9 +95,9 @@ const Home: NextPage = () => {
       <Container className="bg-[#171717]">
         <div className="flex flex-col lg:grid grid-cols-2 lg:flex-nowrap xl:flex-row gap-[32px] lg:gap-[64px] items-center justify-center lg:px-[24px]">
           <figure className="advert-image fluid-gradient fluid-gradient-left">
-            <Image
+            <img
               loading="lazy"
-              src={ProtoFemale}
+              src="https://farcaster-ten.vercel.app/images/proto_female_costume_teaser.gif"
               className="rounded-[32px]"
               alt="Image description"
               width={760}
@@ -159,9 +156,9 @@ const Home: NextPage = () => {
           </div>
 
           <figure className="advert-image fluid-gradient fluid-gradient-left alt">
-            <Image
+            <img
               loading="lazy"
-              src={GaiasConceptJpg}
+              src="https://farcaster-ten.vercel.app/images/gaias_concept_01.jpg"
               alt="Image description"
               width={760}
               height={400}
@@ -171,11 +168,11 @@ const Home: NextPage = () => {
       </Container>
 
       <section id={"promotion-banner-main"}>
-        <Image
+        <img
           alt="Image description"
           height={400}
           width={1000}
-          src={GaiasConcept}
+          src="https://farcaster-ten.vercel.app/images/frame-7.gif"
           loading="lazy"
         />
       </section>
