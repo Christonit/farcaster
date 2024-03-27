@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { FaDiscord } from "react-icons/fa";
@@ -94,11 +95,13 @@ const Home: NextPage = () => {
       <Container className="bg-[#171717]">
         <div className="flex flex-col lg:grid grid-cols-2 lg:flex-nowrap xl:flex-row gap-[32px] lg:gap-[64px] items-center justify-center lg:px-[24px]">
           <figure className="advert-image fluid-gradient fluid-gradient-left">
-            <img
+            <Image
               loading="lazy"
               src="/images/proto_female_costume_teaser.gif"
               className="rounded-[32px]"
               alt="Image description"
+              width={760}
+              height={400}
             />
           </figure>
 
@@ -153,10 +156,12 @@ const Home: NextPage = () => {
           </div>
 
           <figure className="advert-image fluid-gradient fluid-gradient-left alt">
-            <img
+            <Image
               loading="lazy"
-              src="https://pbs.twimg.com/media/GIvSsLgXsAAsDMo?format=jpg&name=4096x4096"
+              src="/images/gaias_concept_01.jpg"
               alt="Image description"
+              width={760}
+              height={400}
             />
           </figure>
         </div>
