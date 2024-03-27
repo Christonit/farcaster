@@ -12,6 +12,9 @@ import type { Metadata } from "next";
 import AnimatedBackground from "../src/components/animated-background";
 import GridGallery from "../src/components/grid-gallery";
 import FeaturesGrid from "../src/components/features-grid";
+import ProtoFemale from "../public/images/proto_female_costume_teaser.gif";
+import GaiasConcept from "../public/images/frame-7.gif";
+import GaiasConceptJpg from "../public/images/gaias_concept_01.jpg";
 export async function generateMetadata(): Promise<Metadata> {
   const frameTags = await getFrameMetadata(
     `${process.env.VERCEL_URL || "http://localhost:3000"}/api`
@@ -97,7 +100,7 @@ const Home: NextPage = () => {
           <figure className="advert-image fluid-gradient fluid-gradient-left">
             <Image
               loading="lazy"
-              src="/images/proto_female_costume_teaser.gif"
+              src={ProtoFemale}
               className="rounded-[32px]"
               alt="Image description"
               width={760}
@@ -158,7 +161,7 @@ const Home: NextPage = () => {
           <figure className="advert-image fluid-gradient fluid-gradient-left alt">
             <Image
               loading="lazy"
-              src="/images/gaias_concept_01.jpg"
+              src={GaiasConceptJpg}
               alt="Image description"
               width={760}
               height={400}
@@ -168,7 +171,13 @@ const Home: NextPage = () => {
       </Container>
 
       <section id={"promotion-banner-main"}>
-        <img src="/images/frame-7.gif" loading="lazy" />
+        <Image
+          alt="Image description"
+          height={400}
+          width={1000}
+          src={GaiasConcept}
+          loading="lazy"
+        />
       </section>
       <Container id={"promotion-banner"}>
         <AnimatedBackground />
