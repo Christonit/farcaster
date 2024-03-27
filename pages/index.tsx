@@ -52,15 +52,15 @@ const Home: NextPage = () => {
 
       <section className="bg-white py-[64px] relative" id="hero-banner">
         <div className="container lg:container mx-auto relative z-[2]">
-          <div className="flex flex-col items-start px-5 text-lg leading-6 max-w-[760px]">
-            <div className="flex gap-px px-5 py-2.5 mb-2 bg-white rounded-3xl border border-solid border-zinc-100 text-neutral-900 max-md:flex-wrap max-md:pr-5 max-md:max-w-full text-left">
+          <div className="flex flex-col items-start px-[16px] lg:px-[40px] text-lg leading-6 max-w-[760px]">
+            <div className="flex  p-[16px] lg:p-[20px] mb-[20px] bg-white rounded-[16px] border border-solid border-slate-200 text-neutral-900 max-md:flex-wrap max-md:pr-5 max-md:max-w-full text-left">
               👋 We're hiring self-motivated people to join the team.
             </div>
             <h1 className=" font-semibold text-neutral-900 text-[32px] lg:text-[48px] leading-tight text-left mb-[24px] lg:mb-[32px]">
               A boon from Base God. Let this silent emblem of your courage
               reside within your hat.
             </h1>
-            <p className="mt-2.5 text-left  max-md:max-w-full">
+            <p className="text-left   max-md:max-w-full mb-[32px]">
               Explore a new era of decentralized possibilities where security
               meets innovation. Ljubljana is your gateway to borderless
               transactions, financial empowerment, and a world without limits.
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
               <div
                 role="group"
                 aria-label="Actions"
-                className="flex gap-4 justify-center mt-12  font-medium whitespace-nowrap max-md:mt-10"
+                className="flex flex-row gap-[12px] md:gap-[16px] justify-center font-medium whitespace-nowrap"
               >
                 <button className="btn btn-primary">Get your boon</button>
                 <button className="btn btn-secondary">
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/85aab849a9ef6606738d89d1fc525bd1455106187391fac2e9eb3a66dfd099af?apiKey=da983b91ec1d46989670bd2839624a11&"
-                    className="w-6 aspect-[1.04]"
+                    className="w-[20px] lg:w-[24px]"
                   />
                 </button>
               </div>
@@ -264,9 +264,9 @@ const Home: NextPage = () => {
 
       <section className="py-[64px] bg-slate-100">
         <div className="lg:container mx-auto px-[16px] lg:px-0">
-          <div className="flex flex-col justify-center items-start px-20 py-[136px]  leading-6 bg-blue-500 rounded-[44px] max-md:px-5 cta-container">
+          <div className="flex flex-col justify-center items-start px-20 py-[32px] lg:py-[136px]  leading-6 bg-blue-500 rounded-[44px] max-md:px-5 cta-container">
             <div className="max-w-[660px] flex flex-col gap-[24px]">
-              <h3 className="text-5xl font-semibold leading-[62.4px] text-left text-white">
+              <h3 className="text-3xl lg:text-5xl font-semibold leading-narrow text-left text-white">
                 {" "}
                 Seize Your Future with Ljubljana{" "}
               </h3>
@@ -284,7 +284,7 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <footer className="mt-[64px]">
+      <footer className="mt-[32px] lg:mt-[64px]">
         <div className="w-full py-[32px]">
           <div className="px-[16px] lg:px-[24px] flex lg:flex-nowrap flex-wrap">
             <div className="flex flex-col w-full max-w-[400px] mb-[32px] lg:mb-0">
