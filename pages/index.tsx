@@ -94,7 +94,7 @@ const Home: NextPage = () => {
       </Container>
       <Container className="bg-[#171717]">
         <div className="flex flex-col lg:grid grid-cols-2 lg:flex-nowrap xl:flex-row gap-[32px] lg:gap-[64px] items-center justify-center lg:px-[24px]">
-          <figure className="advert-image fluid-gradient fluid-gradient-left">
+          <div className="advert-image fluid-gradient fluid-gradient-left">
             <img
               loading="lazy"
               src="https://farcaster-ten.vercel.app/images/proto_female_costume_teaser.gif"
@@ -103,7 +103,7 @@ const Home: NextPage = () => {
               width={760}
               height={400}
             />
-          </figure>
+          </div>
 
           <div className="block flex flex-col gap-[32px] lg:gap-[16px] text-left max-w-[760px]">
             <h3 className="text-2xl lg:text-4xl font-semibold text-white mb-[20px]">
@@ -155,7 +155,7 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <figure className="advert-image fluid-gradient fluid-gradient-left alt">
+          <div className="advert-image fluid-gradient fluid-gradient-left alt">
             <img
               loading="lazy"
               src="https://farcaster-ten.vercel.app/images/gaias_concept_01.jpg"
@@ -163,7 +163,7 @@ const Home: NextPage = () => {
               width={760}
               height={400}
             />
-          </figure>
+          </div>
         </div>
       </Container>
 
