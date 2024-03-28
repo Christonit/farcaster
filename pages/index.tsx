@@ -96,7 +96,6 @@ const Home: NextPage = () => {
         <div className="flex flex-col lg:grid grid-cols-2 lg:flex-nowrap xl:flex-row gap-[32px] lg:gap-[64px] items-center justify-center lg:px-[24px]">
           <div className="advert-image fluid-gradient fluid-gradient-left">
             <img
-              loading="lazy"
               src="https://farcaster-ten.vercel.app/images/proto_female_costume_teaser.gif"
               className="rounded-[32px]"
               alt="Image description"
@@ -157,7 +156,6 @@ const Home: NextPage = () => {
 
           <div className="advert-image fluid-gradient fluid-gradient-left alt">
             <img
-              loading="lazy"
               src="https://farcaster-ten.vercel.app/images/gaias_concept_01.jpg"
               alt="Image description"
               width={760}
