@@ -77,7 +77,7 @@ const Home: NextPage = () => {
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/85aab849a9ef6606738d89d1fc525bd1455106187391fac2e9eb3a66dfd099af?apiKey=da983b91ec1d46989670bd2839624a11&"
-                    className="w-[20px] lg:w-[24px]"
+                    className="w-[20px] lg:w-[24px] hidden md:block"
                   />
                 </button>
               </div>

@@ -12,6 +12,15 @@ $breakpoints: (
   xxl: 1520px,
 );
 
+@mixin max-breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error "Unknown breakpoint: #{$breakpoint}. Please use one of: #{map-keys($breakpoints)}.";
+  }
+}
 // Mixin to apply styles based on a minimum width for each breakpoint
 @mixin breakpoint($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
@@ -296,8 +305,11 @@ p {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(255, 255, 255, 1) 90%
   );
+  @include max-breakpoint(md) {
+    margin: auto;
+  }
 }
 
 .hero-grid-container::before {
@@ -313,10 +325,13 @@ p {
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 1) 100%
   );
+
+  @include max-breakpoint(md) {
+    display: none;
+  }
 }
 
 .hero-grid-container {
-  position: absolute;
   height: auto;
   margin: auto;
   left: 0;
@@ -324,9 +339,19 @@ p {
   bottom: 0;
   top: 0;
   gap: 0;
-  grid-template-columns: repeat(4, 160px);
-  // display: grid;
-  display: none;
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  justify-content: center;
+
+  @include max-breakpoint(lg) {
+    height: 480px;
+    overflow: hidden;
+    padding-top: 64px;
+    margin-top: 32px;
+  }
+  @include breakpoint(md) {
+    grid-template-columns: repeat(4, 160px);
+  }
   @include breakpoint(lg) {
     max-width: 800px;
     display: grid;
@@ -347,6 +372,7 @@ p {
 @media screen and (max-width: 1600px) {
   .hero-grid-container {
     right: -200px;
+    gap: 12px;
   }
 }
 
@@ -378,22 +404,36 @@ p {
   grid-row: span 2;
 }
 
+.hero-grid-container > {
+  .hero-grid-item:nth-child(2),
+  .hero-grid-item:nth-child(5),
+  .hero-grid-item:nth-child(8) {
+    @include max-breakpoint(lg) {
+      top: -40px;
+    }
+  }
+}
 .hero-grid-container > .hero-grid-item:nth-child(n + 1):nth-child(-n + 4) {
-  left: 64px;
   position: relative;
-  background-color: green;
+  @include breakpoint(xl) {
+    left: 64px;
+  }
 }
 
 .hero-grid-container > .hero-grid-item:nth-child(n + 5):nth-child(-n + 8) {
-  left: -144px;
   position: relative;
   background-color: red;
+
+  @include breakpoint(xl) {
+    left: -144px;
+  }
 }
 
 .hero-grid-container > .hero-grid-item:nth-child(n + 13):nth-child(-n + 16) {
-  left: 160px;
   position: relative;
-  background-color: blue;
+  @include breakpoint(xl) {
+    left: 160px;
+  }
 }
 
 .white-shadow {
