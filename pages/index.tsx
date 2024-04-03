@@ -48,21 +48,21 @@ const Home: NextPage = () => {
               <img
                 src="/images/icons/opensea-icon.svg"
                 alt="Opensea Icon"
-                className="h-[36px] drop-shadow"
+                className="h-[40px] drop-shadow"
               />
             </Link>
             <Link href="#" target="_blank">
               <img
                 src="/images/icons/warpcast-icon.svg"
                 alt="Opensea Icon"
-                className="h-[36px] drop-shadow"
+                className="h-[40px] drop-shadow rounded-full"
               />
             </Link>
             <Link href="#" target="_blank">
               <img
                 src="/images/icons/x-icon.svg"
                 alt="Opensea Icon"
-                className="h-[36px] drop-shadow"
+                className="h-[40px] drop-shadow"
               />
             </Link>
           </div>

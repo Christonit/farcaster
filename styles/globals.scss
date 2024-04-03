@@ -703,25 +703,26 @@ p {
 }
 
 .gaian-title {
-  font-size: 48px;
+  font-size: 2.75rem;
   font-family: 'GaianBasic';
   position: relative;
   z-index: 2;
   color: white;
+  line-height: 1;
   @include breakpoint(lg) {
-    font-size: 90px;
+    font-size: 11rem;
   }
   @include breakpoint(xl) {
-    font-size: 96px;
+    font-size: 12rem;
   }
 }
 
 .pf-title {
   font-family: 'PFDinDisplayPro';
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
 
   @include breakpoint(lg) {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
