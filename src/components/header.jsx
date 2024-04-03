@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import React, { useState } from 'react';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="appHeader">
       <nav className="mainNav">
-        <div className="navSection">
+        {/* <div className="navSection">
           <a href="#" className="logoLink">
             <img
               className="logo"
@@ -36,19 +36,19 @@ const Header = () => {
           <a href="#" className="navItem">
             Company
           </a>
-        </div>
+        </div> */}
 
-        <div className="loginSection hideOnMobile">
+        <div className="wallet-section hideOnMobile ml-auto">
           <ConnectButton />
         </div>
       </nav>
 
-      {isSidebarOpen && (
+      {/* {isSidebarOpen && (
         <div className="sidebarOverlay" onClick={toggleSidebar}>
           <div className="sidebar">
-            {/* <button className="menuButton" onClick={toggleSidebar}>
+             <button className="menuButton" onClick={toggleSidebar}>
               Close
-            </button> */}
+            </button> 
             <a href="#" className="sidebarItem">
               Features
             </a>
@@ -63,7 +63,7 @@ const Header = () => {
             </a>
           </div>
         </div>
-      )}
+      )} */}
     </header>
   );
 };

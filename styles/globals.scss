@@ -1,7 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'GaianBasic';
+  src: url('/fonts/GaianBasic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('/fonts/PFDinDisplayPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('/fonts/PFDinDisplayPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
 
 $breakpoints: (
   xs: 0,
@@ -46,7 +63,7 @@ body {
   font-size: 18px;
   padding: 0;
   margin: 0;
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Public Sans', sans-serif;
 }
 
 a {
@@ -180,7 +197,7 @@ p {
 
 .appHeader {
   width: 100%;
-  position: relative;
+  position: absolute;
   z-index: 99;
 }
 
@@ -223,6 +240,13 @@ p {
   display: flex;
   gap: 16px;
   align-items: center;
+}
+
+.wallet-section button {
+  background-color: #b492ff !important;
+  &:hover {
+    background-color: #8669c5 !important;
+  }
 }
 
 .navLinks {
@@ -296,7 +320,7 @@ p {
 }
 
 .hero-grid-container::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 300px;
   bottom: 0;
@@ -313,7 +337,7 @@ p {
 }
 
 .hero-grid-container::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 200px;
   top: 0;
@@ -508,7 +532,7 @@ p {
 }
 
 #promotion-banner::before {
-  content: "";
+  content: '';
   height: 100%;
   /* background: rgb(52, 74, 251); */
   /* background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(1, 16, 130, 0.95) 100%); */
@@ -587,7 +611,7 @@ p {
 .fluid-gradient-left::before {
   background: linear-gradient(-45deg, #2863e8, #e4ddbc, #0050ff, #dda43a);
   background-size: 400% 400%;
-  content: "";
+  content: '';
   left: 8px;
   top: 12px;
 
@@ -600,7 +624,7 @@ p {
 .fluid-gradient-right::before {
   background: linear-gradient(-45deg, #2863e8, #e4ddbc, #0050ff, #dda43a);
   background-size: 400% 400%;
-  content: "";
+  content: '';
   right: 16px;
   top: 16px;
   @include breakpoint(lg) {
@@ -676,4 +700,28 @@ p {
 
 .grid-item {
   height: max-content;
+}
+
+.gaian-title {
+  font-size: 48px;
+  font-family: 'GaianBasic';
+  position: relative;
+  z-index: 2;
+  color: white;
+  @include breakpoint(lg) {
+    font-size: 90px;
+  }
+  @include breakpoint(xl) {
+    font-size: 96px;
+  }
+}
+
+.pf-title {
+  font-family: 'PFDinDisplayPro';
+  color: white;
+  font-size: 24px;
+
+  @include breakpoint(lg) {
+    font-size: 40px;
+  }
 }
