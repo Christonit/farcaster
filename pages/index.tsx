@@ -39,6 +39,13 @@ const Home: NextPage = () => {
           type="font/woff2"
           crossOrigin="anonymous"
         />
+        <link
+          rel="preload"
+          href={`${process.env.NEXT_PUBLIC_HOSTNAME}fonts/PFDinDisplayPro-Regular.ttf`}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </Head>
 
       <Header />
