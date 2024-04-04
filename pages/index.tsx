@@ -32,6 +32,13 @@ const Home: NextPage = () => {
           name="description"
         />
         <link href="/favicon.ico" rel="icon" />
+        <link
+          rel="preload"
+          href={`${process.env.NEXT_PUBLIC_HOSTNAME}fonts/GaianBasic.otf`}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </Head>
 
       <Header />
@@ -44,25 +51,37 @@ const Home: NextPage = () => {
           </h2>
 
           <div className="flex justify-center gap-[20px]">
-            <Link href="#" target="_blank">
+            <Link
+              href="#"
+              target="_blank"
+              className="bg-[#f2ede1] hover:bg-white rounded-full p-[4px]"
+            >
               <img
                 src="/images/icons/opensea-icon.svg"
                 alt="Opensea Icon"
                 className="h-[40px] drop-shadow"
               />
             </Link>
-            <Link href="#" target="_blank">
+            <Link
+              href="#"
+              target="_blank"
+              className="bg-[#f2ede1] hover:bg-white rounded-full p-[4px]"
+            >
               <img
                 src="/images/icons/warpcast-icon.svg"
                 alt="Opensea Icon"
                 className="h-[40px] drop-shadow rounded-full"
               />
             </Link>
-            <Link href="#" target="_blank">
+            <Link
+              href="#"
+              target="_blank"
+              className="flex items-center bg-[#f2ede1] hover:bg-white w-[48px] justify-center rounded-full p-[4px]"
+            >
               <img
                 src="/images/icons/x-icon.svg"
                 alt="Opensea Icon"
-                className="h-[40px] drop-shadow"
+                className="h-[20px] drop-shadow"
               />
             </Link>
           </div>
