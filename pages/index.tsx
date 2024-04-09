@@ -1,21 +1,23 @@
-import Image from 'next/image';
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import { FaDiscord } from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
-import { FaArrowRight } from 'react-icons/fa';
-import Container from '../src/components/container';
-import Header from '../src/components/header';
-import { useEffect } from 'react';
-import { getFrameMetadata } from 'frog/next';
-import type { Metadata } from 'next';
-import AnimatedBackground from '../src/components/animated-background';
-import GridGallery from '../src/components/grid-gallery';
-import FeaturesGrid from '../src/components/features-grid';
-import Link from 'next/link';
+import Image from "next/image";
+import type { NextPage } from "next";
+import Head from "next/head";
+import { FaDiscord } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
+import Container from "../src/components/container";
+import Header from "../src/components/header";
+import { useEffect } from "react";
+import { getFrameMetadata } from "frog/next";
+import type { Metadata } from "next";
+import AnimatedBackground from "../src/components/animated-background";
+import GridGallery from "../src/components/grid-gallery";
+import FeaturesGrid from "../src/components/features-grid";
+import Link from "next/link";
+import anime from "animejs";
+
 export async function generateMetadata(): Promise<Metadata> {
   const frameTags = await getFrameMetadata(
-    `${process.env.VERCEL_URL || 'http://localhost:3000'}/api`
+    `${process.env.VERCEL_URL || "http://localhost:3000"}/api`
   );
   return {
     other: frameTags,
@@ -23,6 +25,49 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    anime.timeline().add({
+      targets: ".gaian-title",
+      delay: 100,
+      translateY: {
+        value: [100, 0],
+        duration: 2000,
+        easing: "easeOutBack",
+        delay: anime.stagger(100),
+      },
+      opacity: {
+        value: [0, 1],
+        duration: 1000,
+        easing: "easeInOutQuad",
+        delay: anime.stagger(100),
+      },
+    });
+    anime.timeline().add({
+      targets: ".pf-title",
+      translateY: {
+        value: [100, 0],
+        duration: 2000,
+        easing: "easeOutBack",
+        delay: anime.stagger(100),
+        loop: true,
+      },
+      delay: 500,
+      opacity: {
+        value: [0, 1],
+        duration: 2000,
+        easing: "easeInOutQuad",
+        delay: anime.stagger(100),
+      },
+    });
+    anime({
+      targets: ".gaian-title",
+      translateY: [0, 25],
+      duration: 3000,
+      easing: "easeInCubic",
+      direction: "alternate",
+      loop: true,
+    });
+  }, []);
   return (
     <div className="overflow-x-hidden">
       <Head>
@@ -52,14 +97,16 @@ const Home: NextPage = () => {
 
       <section className="bg-white py-[64px] relative h-[100vh] flex flex-col justify-center">
         <Container className="relative z-[1]">
-          <h1 className="gaian-title text-center drop-shadow">Onchain Gaias</h1>
-          <h2 className="pf-title text-center drop-shadow mb-[32px]">
+          <h1 className="gaian-title text-center drop-shadow opacity-0">
+            Onchain Gaias
+          </h1>
+          <h2 className="pf-title text-center drop-shadow mb-[32px] opacity-0">
             [onchain gaias]
           </h2>
 
           <div className="flex justify-center gap-[20px]">
             <Link
-              href="#"
+              href="https://opensea.io/es/collection/onchain-gaias"
               target="_blank"
               className="bg-[#f2ede1] hover:bg-white rounded-full p-[4px]"
             >
@@ -70,7 +117,7 @@ const Home: NextPage = () => {
               />
             </Link>
             <Link
-              href="#"
+              href="https://warpcast.com/~/channel/ogs"
               target="_blank"
               className="bg-[#f2ede1] hover:bg-white rounded-full p-[4px]"
             >
@@ -81,7 +128,7 @@ const Home: NextPage = () => {
               />
             </Link>
             <Link
-              href="#"
+              href="https://twitter.com/onchaingaias"
               target="_blank"
               className="flex items-center bg-[#f2ede1] hover:bg-white w-[48px] justify-center rounded-full p-[4px]"
             >

@@ -1,22 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
-  font-family: 'GaianBasic';
-  src: url('/fonts/GaianBasic.otf') format('truetype');
+  font-family: "GaianBasic";
+  src: url("/fonts/GaianBasic.otf") format("truetype");
 }
 
 @font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('/fonts/PFDinDisplayPro-Regular.ttf') format('truetype');
+  font-family: "PFDinDisplayPro";
+  src: url("/fonts/PFDinDisplayPro-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('/fonts/PFDinDisplayPro-Bold.ttf') format('truetype');
+  font-family: "PFDinDisplayPro";
+  src: url("/fonts/PFDinDisplayPro-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
@@ -63,7 +63,7 @@ body {
   font-size: 18px;
   padding: 0;
   margin: 0;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 
 a {
@@ -321,7 +321,7 @@ p {
 }
 
 .hero-grid-container::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 300px;
   bottom: 0;
@@ -338,7 +338,7 @@ p {
 }
 
 .hero-grid-container::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 200px;
   top: 0;
@@ -533,7 +533,7 @@ p {
 }
 
 #promotion-banner::before {
-  content: '';
+  content: "";
   height: 100%;
   /* background: rgb(52, 74, 251); */
   /* background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(1, 16, 130, 0.95) 100%); */
@@ -612,7 +612,7 @@ p {
 .fluid-gradient-left::before {
   background: linear-gradient(-45deg, #2863e8, #e4ddbc, #0050ff, #dda43a);
   background-size: 400% 400%;
-  content: '';
+  content: "";
   left: 8px;
   top: 12px;
 
@@ -625,7 +625,7 @@ p {
 .fluid-gradient-right::before {
   background: linear-gradient(-45deg, #2863e8, #e4ddbc, #0050ff, #dda43a);
   background-size: 400% 400%;
-  content: '';
+  content: "";
   right: 16px;
   top: 16px;
   @include breakpoint(lg) {
@@ -705,11 +705,12 @@ p {
 
 .gaian-title {
   font-size: 2.75rem;
-  font-family: 'GaianBasic';
+  font-family: "GaianBasic";
   position: relative;
   z-index: 2;
   color: white;
   line-height: 1;
+  margin-bottom: 1.5rem;
   @include breakpoint(lg) {
     font-size: 11rem;
   }
@@ -719,7 +720,7 @@ p {
 }
 
 .pf-title {
-  font-family: 'PFDinDisplayPro';
+  font-family: "PFDinDisplayPro";
   color: white;
   font-size: 1.5rem;
 
