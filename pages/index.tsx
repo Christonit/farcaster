@@ -94,8 +94,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Onchain Gaias Forever</title>
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/images/og-image.png" />
-        <meta property="og:image" content="/images/og-image.png" />
+        <meta name="twitter:image" content="/images/onchaingaias-cover.webp" />
+        <meta property="og:image" content="/images/onchaingaias-cover.webp" />
         <meta property="og:title" content="Onchain Gaias Forever" />
         <meta
           name="description"
