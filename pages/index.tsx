@@ -86,7 +86,7 @@ const Home: NextPage = () => {
       easing: "easeInOutQuad",
       direction: "alternate",
       loop: true,
-      letterSpacing: [0, -1],
+      letterSpacing: [0, -2.5],
     });
   }, []);
   return (
