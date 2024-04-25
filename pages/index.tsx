@@ -124,7 +124,6 @@ const Home: NextPage = () => {
           name="twitter:image"
           content="https://www.gaias.tech/images/onchaingaias-cover.webp"
         />
-
         <meta
           name="description"
           content="Welcome to a new era onchain. Very early, very based and extremely optimistic."
