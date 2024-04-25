@@ -172,14 +172,14 @@ const Home: NextPage = () => {
 
           <div className="flex justify-center gap-[20px]">
             <Link
-              href="https://opensea.io/es/collection/onchain-gaias"
+              href="https://magiceden.io/collections/base/0xa449b4f43d9a33fcdcf397b9cc7aa909012709fd"
               target="_blank"
-              className="bg-[#f2ede1] hover:bg-white rounded-full p-[4px]"
+              className="bg-[#f2ede1] w-[48px] items-center flex justify-center hover:bg-white rounded-full p-[4px]"
             >
               <img
-                src="/images/icons/opensea-icon.svg"
+                src="/images/icons/magic-eden-icon.svg"
                 alt="Opensea Icon"
-                className="h-[40px] drop-shadow"
+                className="h-[20px] drop-shadow mx-auto"
               />
             </Link>
             <Link
@@ -201,7 +201,7 @@ const Home: NextPage = () => {
               <img
                 src="/images/icons/x-icon.svg"
                 alt="Opensea Icon"
-                className="h-[20px] drop-shadow"
+                className="h-[40px] drop-shadow"
               />
             </Link>
           </div>
