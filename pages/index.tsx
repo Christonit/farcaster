@@ -94,9 +94,11 @@ const Home: NextPage = () => {
       <Head>
         <title>Onchain Gaias</title>
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/images/onchaingaias-cover.webp" />
+        <meta
+          name="twitter:image"
+          content="https://www.gaias.tech/images/onchaingaias-cover.webp"
+        />
 
-        {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.gaias.tech/" />
         <meta property="og:title" content="Onchain Gaias" />
@@ -104,9 +106,11 @@ const Home: NextPage = () => {
           property="og:description"
           content="Welcome to a new era onchain. Very early, very based and extremely optimistic."
         />
-        <meta property="og:image" content="/images/onchaingaias-cover.webp" />
+        <meta
+          property="og:image"
+          content="https://www.gaias.tech/images/onchaingaias-cover.webp"
+        />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@onchaingaias" />
         <meta name="twitter:creator" content="@onchaingaias" />
@@ -116,7 +120,10 @@ const Home: NextPage = () => {
           name="twitter:description"
           content="Welcome to a new era onchain. Very early, very based and extremely optimistic."
         />
-        <meta name="twitter:image" content="/images/onchaingaias-cover.webp" />
+        <meta
+          name="twitter:image"
+          content="https://www.gaias.tech/images/onchaingaias-cover.webp"
+        />
 
         <meta
           name="description"
