@@ -122,7 +122,7 @@ const Home: NextPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://www.gaias.tech/images/onchaingaias-cover.webp"
+          content="https://www.gaias.tech/images/onchaingaias-cover.png"
         />
         <meta
           name="description"
