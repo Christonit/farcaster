@@ -201,7 +201,7 @@ const Home: NextPage = () => {
               <img
                 src="/images/icons/x-icon.svg"
                 alt="Opensea Icon"
-                className="h-[40px] drop-shadow"
+                className="h-[20px] drop-shadow"
               />
             </Link>
           </div>
