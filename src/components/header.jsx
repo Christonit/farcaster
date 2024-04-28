@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
-
+import React, { useState } from "react";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Link from "next/link";
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -38,7 +38,23 @@ const Header = () => {
           </a>
         </div> */}
 
-        <div className="wallet-section hideOnMobile ml-auto">
+        <div className="wallet-section  hideOnDesktop ml-auto flex gap-[12px]">
+          <Link
+            href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/1"
+            target="_blank"
+            className="link py-[6px] px-[20px] rounded-[12px] shadow-lg font-bold "
+          >
+            Litepaper
+          </Link>
+        </div>
+        <div className="wallet-section hideOnMobile ml-auto flex gap-[12px]">
+          <Link
+            href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/1"
+            target="_blank"
+            className="link py-[6px] px-[20px] rounded-[12px] shadow-lg font-bold "
+          >
+            Litepaper
+          </Link>
           <ConnectButton />
         </div>
       </nav>

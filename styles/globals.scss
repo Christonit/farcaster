@@ -242,7 +242,8 @@ p {
   align-items: center;
 }
 
-.wallet-section button {
+.wallet-section button,
+.wallet-section a {
   background-color: #f2ede1 !important;
   color: #222 !important;
   &:hover {
@@ -264,6 +265,11 @@ p {
 }
 
 /* Mobile Styles */
+@media (min-width: 1024px) {
+  .hideOnDesktop {
+    display: none !important;
+  }
+}
 @media (max-width: 1024px) {
   .menuButton {
     display: block;
