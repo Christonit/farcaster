@@ -29,12 +29,12 @@ function KeyFeatures() {
 
   return (
     <>
-      <div className="lg:flex items-end justify-between mb-[32px]">
+      <div className="lg:flex items-end justify-between lg:mb-[32px]">
         <div>
-          <span className="text-5xl">
+          <span className="text-3xl lg:text-5xl">
             <GaianText className="">Key Features</GaianText>
           </span>
-          <h2 className="text-5xl font-semibold text-neutral-900">
+          <h2 className="text-3xl lg:text-5xl font-semibold text-neutral-900">
             Key Features
           </h2>
         </div>
@@ -57,9 +57,9 @@ function KeyFeatures() {
 
       <Slider ref={sliderRef} {...settings}>
         <div>
-          <div className="flex justify-between">
+          <div className="flex flex-wrap justify-between">
             <div className="left-block min-w-[300px] py-[24px] w-full lg:py-[32px]">
-              <h3 className=" text-[24px] lg:text-[36px] font-semibold text-blue-500">
+              <h3 className=" text-[24px] lg:text-[36px] mb-[32px]  font-semibold text-blue-500">
                 The Power of GAIAs
               </h3>
 
@@ -70,7 +70,7 @@ function KeyFeatures() {
               />
             </div>
 
-            <div className="righ-block flex flex-col gap-[20px] max-w-[700px]">
+            <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px]">
               <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
                 <h4 className="text-slate-900 text-2xl font-bold mb-0">
                   Decentralized
@@ -103,10 +103,10 @@ function KeyFeatures() {
           </div>
         </div>
         <div>
-          <div className="flex justify-between">
+          <div className="flex flex-wrap justify-between">
             <div className="left-block min-w-[300px] py-[24px] w-full lg:py-[32px]">
-              <h3 className=" text-[24px] lg:text-[36px] font-semibold text-blue-500">
-                The Power of GAIAs
+              <h3 className=" text-[24px] mb-[32px] lg:text-[36px] font-semibold text-blue-500">
+                Incentives and Rewards
               </h3>
 
               <img
@@ -116,33 +116,32 @@ function KeyFeatures() {
               />
             </div>
 
-            <div className="righ-block flex flex-col gap-[20px] max-w-[700px]">
+            <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px]">
               <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
                 <h4 className="text-slate-900 text-2xl font-bold mb-0">
-                  Decentralized
+                  Participate and Earn
                 </h4>
                 <p className="text-lg text-slate-500">
-                  Train AI agents through onchain gameplay, with compute
-                  resources funded by player transactions.
+                  Train agents to mastery in various games and skills to earn
+                  rewards.
                 </p>
               </div>
               <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
                 <h4 className="text-slate-900 text-2xl font-bold mb-0">
-                  Exclusive Access
+                  Governance and Control
                 </h4>
                 <p className="text-base text-slate-500">
-                  OGs NFT holders have the unique ability to create and train
-                  these AI agents.
+                  Influence which games and agents are incentivized through
+                  token ownership.
                 </p>
               </div>
               <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
                 <h4 className="text-slate-900 text-2xl font-bold mb-0">
-                  Monetization Opportunities
+                  Developer Opportunities
                 </h4>
                 <p className="text-base text-slate-500">
-                  Highly capable GAIAs can be monetized on the Armory
-                  Marketplace (Intelligence-as-a-Service) and Foundry
-                  Marketplace (Transfer Learning as a Service).
+                  AI engineers and software developers can contribute new
+                  models, agents, or games and earn rewards.
                 </p>
               </div>
             </div>
@@ -150,7 +149,7 @@ function KeyFeatures() {
         </div>
       </Slider>
 
-      <div className="flex justify-between items-center lg:hidden gap-[32px]">
+      <div className="flex justify-center items-center lg:hidden gap-[32px] mt-[16px]">
         <button
           onClick={previous}
           className="px-2 w-[40px] h-[40px] flex justify-center  py-2 border-slate-900  border text-white rounded-full"

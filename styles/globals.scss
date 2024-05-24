@@ -743,10 +743,25 @@ p {
   background-image: url(/images/geometric-pattern.svg);
   background-size: cover;
   background-blend-mode: overlay;
+  background-repeat: no-repeat;
 }
 
 .join-the-rev {
   background-image: url(/images/bg-pattern.png);
   background-size: contain;
   background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.slick-slider {
+  @include max-breakpoint(md) {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+}
+.slick-initialized .slick-slide {
+  @include max-breakpoint(md) {
+    display: block;
+    padding: 0 16px;
+  }
 }

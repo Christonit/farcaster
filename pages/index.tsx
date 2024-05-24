@@ -167,18 +167,18 @@ const Home: NextPage = () => {
       <section className="bg-white py-[64px] relative h-[100vh] flex flex-col justify-center">
         <Container className="relative z-[1]">
           <div className="w-full max-w-[1020px] mx-auto">
-            <h1 className="text-5xl leading-narrow  text-slate-900 text-center font-bold mb-[32px] ">
+            <h1 className="text-3xl lg:text-5xl leading-narrow  text-slate-900 text-center font-bold mb-[24px] lg:mb-[32px] ">
               Welcome to the <br />
               Onchain General Intelligence Network
             </h1>
 
-            <p className="text-2xl leading-normal text-slate-500 text-center mb-[32px]">
+            <p className=" text-xl lg:text-2xl leading-normal text-slate-500 text-center mb-[24px] lg:mb-[32px]">
               Onchain Gaias (OGs) is not just an art project; it's a
               groundbreaking initiative designed to democratize access to
               advanced AI technology.
             </p>
 
-            <div className="flex justify-center gap-[20px] mb-[32px]">
+            <div className="flex flex-wrap justify-center gap-[20px] mb-[32px]">
               <Link
                 href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
                 target="_blank"
@@ -252,13 +252,14 @@ const Home: NextPage = () => {
       <section className="bg-slate-900 join-the-rev">
         <Container>
           <div className="flex mb-[32px] flex-col mx-auto max-w-[740px]">
-            <div className="text-center  mb-[32px]">
-              <span className="text-4xl">
+            <div className="text-center mb-[24px]  lg:mb-[32px]">
+              <span className="text-2xl lg:text-4xl">
                 <GaianText className="">Join the Revolution</GaianText>
               </span>
-              <h2 className="text-4xl  text-[#C8CDD0]">
+              <h2 className="text-2xl lg:text-4xl  text-[#C8CDD0]">
                 <b className="text-white">Join the Revolution </b> <br />
-                of Decentralized AI with Onchain Gaias (OGs)
+                of Decentralized AI with <br className="block lg:hidden" />{" "}
+                Onchain Gaias (OGs)
               </h2>
             </div>
 
@@ -272,22 +273,34 @@ const Home: NextPage = () => {
             </p>
           </div>
 
-          <div className="text-white  grid grid-cols-3 grid-rows-2 gap-[20px] max-w-[1024px] mx-auto">
+          <div className="text-white  grid lg:grid-cols-3 grid-rows-2 gap-[20px] max-w-[1024px] mx-auto">
             {/* First Item: Spans 2 columns and 2 rows */}
-            <div className="bg-slate-600 p-6 rounded-lg shadow-md col-span-1  row-span-2 flex flex-col">
-              <div className="flex items-center mb-4">
+            <div className="bg-slate-600 p-6 rounded-lg shadow-md lg:col-span-1  lg:row-span-2 flex flex-col">
+              <div className="flex items-center mb-4 gap-[16px]">
                 <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center">
                   {/* Replace with your icon */}
                   <img src="/images/icon-1.svg" />
                 </div>
+
+                <div className="block lg:hidden">
+                  <span className="text-[20px] lg:text-[24px] text-[#C8CDD0]">
+                    <GaianText>Innovative AI Integration</GaianText>
+                  </span>
+                  <h2 className="text-lg font-bold">
+                    Innovative AI Integration
+                  </h2>
+                </div>
               </div>
 
-              <span className="text-[20px] lg:text-[24px] text-[#C8CDD0]">
-                <GaianText>Innovative AI Integration</GaianText>
-              </span>
-              <h2 className="text-lg font-bold mb-2">
-                Innovative AI Integration
-              </h2>
+              <div className="hidden lg:block">
+                <span className="text-[20px] lg:text-[24px] text-[#C8CDD0]">
+                  <GaianText>Innovative AI Integration</GaianText>
+                </span>
+                <h2 className="text-lg font-bold mb-2">
+                  Innovative AI Integration
+                </h2>
+              </div>
+
               <p className="text-[#C8CDD0]">
                 OGs NFTs aren't just digital art; they provide exclusive access
                 to creating and training General Artificial Intelligence Agents
@@ -296,7 +309,7 @@ const Home: NextPage = () => {
             </div>
 
             {/* Second Item: Normal size */}
-            <div className="bg-slate-600 p-6 rounded-lg shadow-md flex flex-col col-span-2">
+            <div className="bg-slate-600 p-6 rounded-lg shadow-md flex flex-col lg:col-span-2">
               <div className="flex items-center mb-4 gap-[16px]">
                 <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center">
                   <img src="/images/icon-2.svg" />
@@ -318,7 +331,7 @@ const Home: NextPage = () => {
             </div>
 
             {/* Third Item: Normal size */}
-            <div className="bg-slate-600 p-6 rounded-lg shadow-md flex flex-col col-span-2">
+            <div className="bg-slate-600 p-6 rounded-lg shadow-md flex flex-col lg:col-span-2">
               <div className="flex items-center mb-4 gap-[16px]">
                 <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center">
                   <img src="/images/icon-3.svg" />
@@ -351,19 +364,19 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className="selling-points bg-[#EDEFEA]">
-        <Container className="mx-auto max-w-[912px] ">
+        <Container className="mx-auto w-full max-w-[912px] ">
           <div className=" mb-[32px] text-center">
             <div>
-              <span className="text-5xl">
+              <span className="text-2xl lg:text-5xl">
                 <GaianText className="">Get Started with OGs</GaianText>
               </span>
-              <h2 className="text-5xl font-semibold text-neutral-900">
+              <h2 className="text-4xl lg:text-5xl font-semibold text-neutral-900">
                 Get Started with OGs
               </h2>
             </div>
           </div>
 
-          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex gap-[32px] mb-[32px]">
+          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:gap-[32px] mb-[32px]">
             <div className="block-image min-w-[252px]">
               <img
                 src="/images/get-started-1.png"
@@ -407,7 +420,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex gap-[32px] ">
+          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:gap-[32px] ">
             <div className="flex flex-col gap-[16px]">
               <div className="title-block">
                 <span className="text-[24px] lg:text-[32px]">

@@ -11,7 +11,7 @@ function SignUpComponent({ className }: { className?: string }) {
               <span className="text-2xl ">
                 <GaianText>Ready to Unlock the Future of AI</GaianText>
               </span>
-              <h3 className="text-3xl font-bold tracking-tighter text-zinc-800 max-md:max-w-full leading-normal">
+              <h3 className="text-3xl font-bold tracking-tighter text-zinc-800 max-md:max-w-full leading-narrow  lg:leading-normal">
                 Ready to Unlock the Future of AI?
               </h3>
             </div>
@@ -20,10 +20,10 @@ function SignUpComponent({ className }: { className?: string }) {
               Discover how you can participate in the OGs project and contribute
               to a more equitable and decentralized AI-driven world.
             </div>
-            <div className="flex p-[4px] mt-6 tracking-tight bg-blue-600 rounded-[12px] ">
+            <div className="flex flex-col lg:flex-row p-[4px] mt-6 tracking-tight bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0">
               <input
                 placeholder="Email"
-                className="grow justify-center items-start px-3 py-2 text-base leading-6 whitespace-nowrap bg-white rounded-[8px] text-zinc-800 w-fit max-md:pr-5"
+                className="w-full mb-[12px] lg:mb-0 grow justify-center items-start px-3 py-2 text-base leading-6 whitespace-nowrap bg-white rounded-[8px] text-zinc-800 w-fit max-md:pr-5"
               />
               <button className="flex flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-600 rounded-xl">
                 <div className="text-base font-bold leading-6">
