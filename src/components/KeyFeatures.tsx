@@ -57,8 +57,8 @@ function KeyFeatures() {
 
       <Slider ref={sliderRef} {...settings}>
         <div>
-          <div className="flex flex-wrap justify-between">
-            <div className="left-block min-w-[300px] py-[24px] w-full lg:py-[32px]">
+          <div className="flex flex-wrap xl:flex-nowrap justify-between">
+            <div className="left-block min-w-[300px] py-[24px] w-full lg:py-0">
               <h3 className=" text-[24px] lg:text-[36px] mb-[32px]  font-semibold text-blue-500">
                 The Power of GAIAs
               </h3>
@@ -103,8 +103,8 @@ function KeyFeatures() {
           </div>
         </div>
         <div>
-          <div className="flex flex-wrap justify-between">
-            <div className="left-block min-w-[300px] py-[24px] w-full lg:py-[32px]">
+          <div className="flex flex-wrap xl:flex-nowrap justify-between">
+            <div className="left-block min-w-[300px] py-[24px] w-full lg:py-0">
               <h3 className=" text-[24px] mb-[32px] lg:text-[36px] font-semibold text-blue-500">
                 Incentives and Rewards
               </h3>

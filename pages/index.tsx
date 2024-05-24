@@ -376,7 +376,7 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:gap-[32px] mb-[32px]">
+          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:flex-nowrap  lg:gap-[32px] mb-[32px]">
             <div className="block-image min-w-[252px]">
               <img
                 src="/images/get-started-1.png"
@@ -420,8 +420,8 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:gap-[32px] ">
-            <div className="flex flex-col gap-[16px]">
+          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:flex-nowrap lg:gap-[32px] ">
+            <div className="flex flex-col ">
               <div className="title-block">
                 <span className="text-[24px] lg:text-[32px]">
                   <GaianText>How It Works</GaianText>
