@@ -6,7 +6,7 @@ import GaianText from "./GaianText";
 function KeyFeatures() {
   const [slideIndex, setSlideIndex] = useState(0);
   const [updateCount, setUpdateCount] = useState(0);
-  let sliderRef = useRef(null);
+  let sliderRef = useRef<Slider>(null);
 
   const settings = {
     dots: false,
@@ -16,15 +16,16 @@ function KeyFeatures() {
     slidesToShow: 1,
     slidesToScroll: 1,
     afterChange: () => setUpdateCount(updateCount + 1),
-    beforeChange: (current, next) => setSlideIndex(next),
+    beforeChange: (current: any, next: React.SetStateAction<number>) =>
+      setSlideIndex(next),
   };
 
   const next = () => {
-    sliderRef.current.slickNext();
+    if (sliderRef.current) sliderRef.current.slickNext();
   };
 
   const previous = () => {
-    sliderRef.current.slickPrev();
+    if (sliderRef.current) sliderRef.current.slickPrev();
   };
 
   return (
