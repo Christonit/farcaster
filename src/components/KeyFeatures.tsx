@@ -65,13 +65,13 @@ function KeyFeatures() {
               </h3>
 
               <img
-                src="/images/the-eye.png"
+                src="/images/gaias_infographics_4.png"
                 alt="Key Features"
-                className="mix-blend-color-burn w-auto mx-auto "
+                className="mix-blend-color-burn w-full mx-auto  max-w-[700px] mt-[64px]"
               />
             </div>
 
-            <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px]">
+            <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px] lg:pr-[32px]">
               <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
                 <h4 className="text-slate-900 text-2xl font-bold mb-0">
                   Decentralized
@@ -111,13 +111,13 @@ function KeyFeatures() {
               </h3>
 
               <img
-                src="/images/the-eye.png"
+                src="/images/gaias_infographics_5.png"
                 alt="Key Features"
-                className="mix-blend-color-burn w-auto mx-auto "
+                className="mix-blend-color-burn w-full mx-auto max-w-[700px] xl:mt-[64px]"
               />
             </div>
 
-            <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px]">
+            <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px]  lg:pr-[32px]">
               <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
                 <h4 className="text-slate-900 text-2xl font-bold mb-0">
                   Participate and Earn

@@ -173,9 +173,9 @@ const Home: NextPage = () => {
             </h1>
 
             <p className=" text-xl lg:text-2xl leading-normal text-slate-500 text-center mb-[24px] lg:mb-[32px]">
-              Onchain Gaias (OGs) is not just an art project; it's a
-              groundbreaking initiative designed to democratize access to
-              advanced AI technology.
+              A Revolutionary Art Project Pushing Technological Boundaries and
+              Redefining Ownership in the Digital Art World. Unlock Advanced AI
+              Capabilities with Onchain Gaias NFTs
             </p>
 
             <div className="flex flex-wrap justify-center gap-[20px] mb-[32px]">
@@ -264,12 +264,9 @@ const Home: NextPage = () => {
             </div>
 
             <p className="text-base text-[#C8CDD0] text-center">
-              Onchain Gaias (OGs) is not just an art project; it's a
-              groundbreaking initiative designed to democratize access to
-              advanced AI technology. Through a unique blend of NFT ownership
-              and decentralized AI agent training, OGs aims to make a
-              significant impact on the world. Be part of this transformative
-              journey and unlock the potential of AI in a decentralized network.
+              Onchain Gaias aims to make advanced AI technology widely
+              accessible through a decentralized network of intelligent agents
+              called General Artificial Intelligence Agents (GAIAs).
             </p>
           </div>
 
@@ -277,9 +274,8 @@ const Home: NextPage = () => {
             {/* First Item: Spans 2 columns and 2 rows */}
             <div className="bg-slate-600 p-6 rounded-lg shadow-md lg:col-span-1  lg:row-span-2 flex flex-col">
               <div className="flex items-center mb-4 gap-[16px]">
-                <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center">
-                  {/* Replace with your icon */}
-                  <img src="/images/icon-1.svg" />
+                <div className="w-[120px] rounded-full flex items-center justify-center">
+                  <img src="/images/gaias_infographics_1.png" />
                 </div>
 
                 <div className="block lg:hidden">
@@ -302,17 +298,18 @@ const Home: NextPage = () => {
               </div>
 
               <p className="text-[#C8CDD0]">
-                OGs NFTs aren't just digital art; they provide exclusive access
-                to creating and training General Artificial Intelligence Agents
-                (GAIAs).
+                GAIAs are AI agents that can be trained by anyone through
+                onchain gameplay, with compute resources funded by player
+                transactions. OGs NFT holders have the exclusive ability to
+                create these agents.
               </p>
             </div>
 
             {/* Second Item: Normal size */}
             <div className="bg-slate-600 p-6 rounded-lg shadow-md flex flex-col lg:col-span-2">
               <div className="flex items-center mb-4 gap-[16px]">
-                <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center">
-                  <img src="/images/icon-2.svg" />
+                <div className="w-[120px] rounded-full flex items-center justify-center">
+                  <img src="/images/gaias_infographics_2.png" />
                 </div>
 
                 <div>
@@ -324,17 +321,17 @@ const Home: NextPage = () => {
               </div>
 
               <p className="text-[#C8CDD0]">
-                Engage with a system that leverages decentralized, massively
-                scaled compute resources, pushing the boundaries of AI
-                capabilities.
+                The system incentivizes widespread participation through rewards
+                in the form of [token redacted], earned by training agents to
+                mastery in various games and skills.
               </p>
             </div>
 
             {/* Third Item: Normal size */}
             <div className="bg-slate-600 p-6 rounded-lg shadow-md flex flex-col lg:col-span-2">
               <div className="flex items-center mb-4 gap-[16px]">
-                <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center">
-                  <img src="/images/icon-3.svg" />
+                <div className="w-[120px] rounded-full flex items-center justify-center">
+                  <img src="/images/gaias_infographics_3.png" />
                 </div>
 
                 <div>
@@ -346,8 +343,10 @@ const Home: NextPage = () => {
               </div>
 
               <p className="text-[#C8CDD0]">
-                Participate in a project that prioritizes egalitarian access and
-                community involvement.
+                Highly capable GAIAs will be able to be monetized through the
+                Armory Marketplace (an Intelligence-as-a-Service platform) and
+                the Foundry Marketplace (a Transfer Learning as a Service
+                platform).
               </p>
             </div>
           </div>
@@ -378,10 +377,7 @@ const Home: NextPage = () => {
 
           <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:flex-nowrap  lg:gap-[32px] mb-[32px]">
             <div className="block-image min-w-[252px]">
-              <img
-                src="/images/get-started-1.png"
-                className="mix-blend-color-burn"
-              />
+              <img src="/images/gaias_infographics_6.png" className="  " />
             </div>
 
             <div className="flex flex-col gap-[16px]">
@@ -460,23 +456,20 @@ const Home: NextPage = () => {
             </div>
 
             <div className="block-image min-w-[252px]">
-              <img
-                src="/images/get-started-2.png"
-                className="mix-blend-color-burn"
-              />
+              <img src="/images/gaias_infographics_7.png" className="" />
             </div>
           </div>
         </Container>
       </section>
 
-      <section className="bg-[#CDC7B5]">
+      <section className="bg-slate-900">
         <Container className="relative z-[1]">
           <div className="w-full  max-w-[912px] mx-auto">
-            <h2 className="text-4xl font-semibold text-neutral-900 text-center mb-[32px]">
+            <h2 className="text-4xl font-semibold  text-center mb-[32px] text-white">
               Join the OGs Revolution
             </h2>
 
-            <p className="text-xl leading-normal text-slate-500 text-center mb-[32px]">
+            <p className="text-xl leading-normal text-[#C8CDD0] text-center mb-[32px]">
               Be part of a grassroots movement to decentralize AI technology.
               Whether you're an AI enthusiast, developer, or just curious about
               the future of intelligent systems, Onchain Gaias offers a unique
@@ -487,6 +480,62 @@ const Home: NextPage = () => {
           <SignUpComponent className="mx-auto" />
         </Container>
       </section>
+
+      <footer className="py-[12px] bg-slate-900">
+        <div className="w-full  px-[20px] mx-auto">
+          <div className="flex flex-wrap lg:flex-row  justify-center lg:justify-between">
+            <p className="text-base text-white">
+              © {new Date().getFullYear()} Onchain Gaias. All rights reserved.
+            </p>
+
+            <div className="flex gap-[16px] flex-wrap items-center">
+              <Link
+                href={
+                  "https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
+                }
+                target="_blank"
+                className="text-base text-white"
+              >
+                Read the Whitepaper
+              </Link>
+
+              <Link
+                href="https://magiceden.io/collections/base/0xa449b4f43d9a33fcdcf397b9cc7aa909012709fd"
+                target="_blank"
+                className="bg-[#f2ede1] w-[32px] h-[32px] items-center flex justify-center hover:bg-white rounded-full p-[4px]"
+              >
+                <img
+                  src="/images/icons/magic-eden-icon.svg"
+                  alt="Opensea Icon"
+                  className="h-[20px] drop-shadow mx-auto"
+                />
+              </Link>
+              <Link
+                href="https://warpcast.com/~/channel/ogs"
+                target="_blank"
+                className="bg-[#f2ede1] hover:bg-white rounded-full p-[4px]"
+              >
+                <img
+                  src="/images/icons/warpcast-icon.svg"
+                  alt="Opensea Icon"
+                  className="h-[28px] drop-shadow rounded-full"
+                />
+              </Link>
+              <Link
+                href="https://twitter.com/onchaingaias"
+                target="_blank"
+                className="flex items-center bg-[#f2ede1] hover:bg-white w-[32px] h-[32px] justify-center rounded-full p-[4px]"
+              >
+                <img
+                  src="/images/icons/x-icon.svg"
+                  alt="Opensea Icon"
+                  className="h-[20px] drop-shadow"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -48,8 +48,8 @@ function SignUpComponent({ className }: { className?: string }) {
         <div className="flex flex-col ml-5 w-[29%] max-md:ml-0 max-md:w-full">
           <img
             loading="lazy"
-            srcSet="/images/sign-up-image.png"
-            className="grow w-full  object-cover"
+            srcSet="/images/gaias_infographics_legend.png"
+            className=" w-full   max-w-[200px] mx-auto"
           />
         </div>
       </div>
