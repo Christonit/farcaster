@@ -2,6 +2,7 @@ import GaianText from "./GaianText";
 function SignUpComponent({ className }: { className?: string }) {
   return (
     <div
+      id="sign-up"
       className={`px-10 py-12 bg-white rounded-xl shadow-sm max-w-[913px] max-md:px-5 ${className}`}
     >
       <div className="flex gap-5 max-md:flex-col max-md:gap-0">

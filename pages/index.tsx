@@ -180,8 +180,7 @@ const Home: NextPage = () => {
 
             <div className="flex flex-wrap justify-center gap-[20px] mb-[32px]">
               <Link
-                href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
-                target="_blank"
+                href="#sign-up"
                 className="link py-[6px] px-[20px] rounded-[12px] shadow-lg border border-transparent font-bold bg-blue-500 text-white py-[8px] hover:bg-blue-600"
               >
                 Join the Revolution
