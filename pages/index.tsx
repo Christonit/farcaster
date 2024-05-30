@@ -480,7 +480,7 @@ const Home: NextPage = () => {
         </Container>
       </section>
 
-      <footer className="py-[12px] bg-slate-900">
+      <footer className=" pt-[12px] pb-[32px] lg:py-[12px] bg-slate-900">
         <div className="w-full  px-[20px] mx-auto">
           <div className="flex flex-wrap lg:flex-row  justify-center lg:justify-between">
             <p className="text-base text-white">
