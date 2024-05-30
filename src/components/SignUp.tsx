@@ -20,12 +20,30 @@ function SignUpComponent({ className }: { className?: string }) {
               Discover how you can participate in the OGs project and contribute
               to a more equitable and decentralized AI-driven world.
             </div>
-            <div className="flex flex-col lg:flex-row p-[4px] mt-6 tracking-tight bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0">
+            <form
+              className="flex flex-col lg:flex-row p-[4px] mt-6 tracking-tight bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0"
+              action="https://forms.zohopublic.com/onchaingaias/form/EmailSubscription/formperma/j0sm4pKWnQ0WjSBWGkUX6b-_l8mH-_io-mgGl8o4OMk/htmlRecords/submit"
+              name="form"
+              id="form"
+              method="POST"
+              acceptCharset="UTF-8"
+              encType="multipart/form-data"
+            >
+              <input type="hidden" name="zf_referrer_name" value="" />
+              <input type="hidden" name="zf_redirect_url" value="" />
+              <input type="hidden" name="zc_gad" value="" />
+              {/* eslint-disable-next-line  */}
               <input
+                type="text"
+                name="Email"
+                maxLength={Number("255")}
                 placeholder="Email"
                 className="w-full lg:w-auto mb-[12px] lg:mb-0 grow justify-center items-start px-3 py-2 text-base leading-6 whitespace-nowrap bg-white rounded-[8px] text-zinc-800 w-fit max-md:pr-5"
               />
-              <button className="flex flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-600 rounded-xl">
+              <button
+                type="submit"
+                className="flex flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-600 rounded-xl"
+              >
                 <div className="text-base font-bold leading-6">
                   Join the Revolution
                 </div>
@@ -42,7 +60,7 @@ function SignUpComponent({ className }: { className?: string }) {
                   />
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
         <div className="flex flex-col ml-5 w-[29%] max-md:ml-0 max-md:w-full">
