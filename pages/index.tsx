@@ -375,7 +375,7 @@ const Home: NextPage = () => {
           </div>
 
           <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:flex-nowrap  lg:gap-[32px] mb-[32px]">
-            <div className="block-image min-w-[252px]">
+            <div className="block-image max-w-[180px] lg:max-w-auto lg:min-w-[252px] mx-auto mb-[12px] lg:mb-0">
               <img src="/images/gaias_infographics_6.png" className="  " />
             </div>
 
