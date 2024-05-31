@@ -43,15 +43,21 @@ function KeyFeatures() {
         <div className="lg:flex justify-between items-center hidden gap-[16px]">
           <button
             onClick={previous}
-            className="px-2 w-[40px] h-[40px] flex justify-center  py-2 border-slate-900  border text-white rounded-full"
+            className="px-3 w-[112px] h-[40px] flex justify-center gap-[12px] items-center py-2 border-slate-900 text-slate-900  border text-white rounded-full"
           >
             <img src="/images/arrow_back.svg" alt="Arrow Left" />
+
+            <span className="text-slate-900 text-lg leading-none  top-[2px] relative">Prev</span>
+
           </button>
           <button
             onClick={next}
-            className="px-2 w-[40px] h-[40px] flex justify-center  py-2 border-slate-900   border text-white rounded-full"
+            className="px-3 w-[112px] h-[40px] flex justify-center gap-[12px] items-center py-2 border-slate-900 text-slate-900  border text-white rounded-full"
           >
+            <span className="text-slate-900 text-lg leading-none top-[2px] relative">Next</span>
+
             <img src="/images/arrow_forward.svg" alt="Arrow ight" />
+
           </button>
         </div>
       </div>
