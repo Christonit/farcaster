@@ -460,10 +460,10 @@ const Home: NextPage = () => {
             <div className="flex flex-col ">
               <div className="title-block">
                 <span className="text-[24px] lg:text-[32px]">
-                  <GaianText>How It Works</GaianText>
+                  <GaianText>Your AI, Your Way</GaianText>
                 </span>
                 <h3 className="text-[24px] lg:text-[32px] font-bold">
-                  How It Works
+                Your AI, Your Way
                 </h3>
               </div>
               <div>
