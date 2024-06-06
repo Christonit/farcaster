@@ -506,7 +506,7 @@ const Home: NextPage = () => {
         <Container className="relative z-[1]">
           <div className="w-full  max-w-[912px] mx-auto">
             <h2 className="text-4xl font-semibold  text-center mb-[32px] text-white">
-            The Path to a Better Tomorrow
+            Build the Future
             </h2>
 
             <p className="text-xl leading-normal text-[#C8CDD0] text-center mb-[32px]">
