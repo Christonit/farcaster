@@ -73,34 +73,34 @@ function KeyFeatures() {
               <img
                 src="/images/gaias_infographics_4.png"
                 alt="Key Features"
-                className="mix-blend-color-burn w-full mx-auto  max-w-[700px] mt-[64px]"
+                className="mix-blend-color-burn w-full mr-auto  max-w-[700px] mt-[64px]"
               />
             </div>
 
             <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px] lg:pr-[32px]">
-              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
-                <h4 className="text-slate-900 text-2xl font-bold mb-0">
+              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col bg-slate-900">
+                <h4 className="text-slate-150 text-2xl font-bold mb-0">
                   Decentralized
                 </h4>
-                <p className="text-lg text-slate-500">
+                <p className="text-lg text-slate-300">
                   Train AI agents through onchain gameplay, with compute
                   resources funded by player transactions.
                 </p>
               </div>
-              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
-                <h4 className="text-slate-900 text-2xl font-bold mb-0">
+              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col bg-slate-900">
+                <h4 className="text-slate-150 text-2xl font-bold mb-0">
                   Exclusive Access
                 </h4>
-                <p className="text-base text-slate-500">
+                <p className="text-base text-slate-300">
                   OGs NFT holders have the unique ability to create and train
                   these AI agents.
                 </p>
               </div>
-              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
-                <h4 className="text-slate-900 text-2xl font-bold mb-0">
+              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col bg-slate-900">
+                <h4 className="text-slate-150 text-2xl font-bold mb-0">
                   Monetization Opportunities
                 </h4>
-                <p className="text-base text-slate-500">
+                <p className="text-base text-slate-300">
                   Highly capable GAIAs can be monetized on the Armory
                   Marketplace (Intelligence-as-a-Service) and Foundry
                   Marketplace (Transfer Learning as a Service).
@@ -119,34 +119,34 @@ function KeyFeatures() {
               <img
                 src="/images/gaias_infographics_5.png"
                 alt="Key Features"
-                className="mix-blend-color-burn w-full mx-auto max-w-[700px] xl:mt-[64px]"
+                className="mix-blend-color-burn w-full mr-auto max-w-[700px] xl:mt-[64px]"
               />
             </div>
 
             <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px]  lg:pr-[32px]">
-              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
-                <h4 className="text-slate-900 text-2xl font-bold mb-0">
+              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col bg-slate-900">
+                <h4 className="text-slate-150 text-2xl font-bold mb-0">
                   Participate and Earn
                 </h4>
-                <p className="text-lg text-slate-500">
+                <p className="text-lg text-slate-300">
                   Train agents to mastery in various games and skills to earn
                   rewards.
                 </p>
               </div>
-              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
-                <h4 className="text-slate-900 text-2xl font-bold mb-0">
+              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col bg-slate-900">
+                <h4 className="text-slate-150 text-2xl font-bold mb-0">
                   Governance and Control
                 </h4>
-                <p className="text-base text-slate-500">
+                <p className="text-base text-slate-300">
                   Influence which games and agents are incentivized through
                   token ownership.
                 </p>
               </div>
-              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
-                <h4 className="text-slate-900 text-2xl font-bold mb-0">
+              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col bg-slate-900">
+                <h4 className="text-slate-150 text-2xl font-bold mb-0">
                   Developer Opportunities
                 </h4>
-                <p className="text-base text-slate-500">
+                <p className="text-base text-slate-300">
                   AI engineers and software developers can contribute new
                   models, agents, or games and earn rewards.
                 </p>

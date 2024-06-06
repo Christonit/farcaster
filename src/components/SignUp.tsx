@@ -46,7 +46,7 @@ function SignUpComponent({ className }: { className?: string }) {
                 className="flex flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-600 rounded-xl"
               >
                 <div className="text-base font-bold leading-6">
-                  Join the Revolution
+                Build the Future 
                 </div>
                 <svg
                   width="14"

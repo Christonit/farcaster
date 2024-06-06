@@ -214,7 +214,7 @@ const Home: NextPage = () => {
                 className="flex flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded-xl"
               >
                 <div className="text-base font-bold leading-6">
-                  Join the Revolution
+                Build the Future 
                 </div>
                 <svg
                   width="14"
@@ -506,7 +506,7 @@ const Home: NextPage = () => {
         <Container className="relative z-[1]">
           <div className="w-full  max-w-[912px] mx-auto">
             <h2 className="text-4xl font-semibold  text-center mb-[32px] text-white">
-              Join the OGs Revolution
+            Join the Path to Innovation
             </h2>
 
             <p className="text-xl leading-normal text-[#C8CDD0] text-center mb-[32px]">
