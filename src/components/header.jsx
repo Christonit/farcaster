@@ -51,7 +51,7 @@ const Header = () => {
           >
             Whitepaper
           </Link>
-          <ConnectButton />
+          {/* <ConnectButton /> */}
         </div>
       </nav>
 

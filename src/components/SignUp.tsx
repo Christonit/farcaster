@@ -18,8 +18,7 @@ function SignUpComponent({ className }: { className?: string }) {
             </div>
 
             <div className="mt-4 text-base leading-6 text-zinc-500 max-md:max-w-full">
-              Discover how you can participate in the OGs project and contribute
-              to a more equitable and decentralized AI-driven world.
+            Discover how you can participate in the OGs project and contribute to a better, more decentralized AI-driven world.
             </div>
             <form
               className="flex flex-col lg:flex-row p-[4px] mt-6 tracking-tight bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0"

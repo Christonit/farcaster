@@ -173,9 +173,7 @@ const Home: NextPage = () => {
             </h1>
 
             <p className=" text-xl lg:text-2xl leading-normal text-slate-500 text-center mb-[24px] lg:mb-[32px]">
-              A Revolutionary Art Project Pushing Technological Boundaries and
-              Redefining Ownership in the Digital Art World. Unlock Advanced AI
-              Capabilities with Onchain Gaias NFTs
+            A revolutionary art project pushing technological boundaries and redefining ownership in the world of digital art and agentic AI
             </p>
 
             <div className="flex flex-wrap justify-center gap-[20px] mb-[32px]">
@@ -306,7 +304,7 @@ const Home: NextPage = () => {
             <p className="text-base text-[#C8CDD0] text-center">
               Onchain Gaias aims to make advanced AI technology widely
               accessible through a decentralized network of intelligent agents
-              called General Artificial Intelligence Agents (GAIAs).
+              called General Artificial Intelligence Agents (GAIAs)
             </p>
           </div>
 
@@ -340,8 +338,7 @@ const Home: NextPage = () => {
               <p className="text-[#C8CDD0]">
                 GAIAs are AI agents that can be trained by anyone through
                 onchain gameplay, with compute resources funded by player
-                transactions. OGs NFT holders have the exclusive ability to
-                create these agents.
+                transactions. OGs NFT holders have the exclusive ability to create these agents and benefit from community training.
               </p>
             </div>
 
@@ -361,9 +358,7 @@ const Home: NextPage = () => {
               </div>
 
               <p className="text-[#C8CDD0]">
-                The system incentivizes widespread participation through rewards
-                in the form of [token redacted], earned by training agents to
-                mastery in various games and skills.
+              The system incentivizes widspread participation through rewards in the form of XP, directly translatable to future token rewards. XP is earned by training agents in various games and skills.
               </p>
             </div>
 
@@ -376,17 +371,14 @@ const Home: NextPage = () => {
 
                 <div>
                   <span className="text-[20px] lg:text-[24px] text-[#C8CDD0]">
-                    <GaianText>Community-Driven</GaianText>
+                    <GaianText>Forward-Thinking</GaianText>
                   </span>
-                  <h2 className="text-lg font-bold">Community-Driven</h2>
+                  <h2 className="text-lg font-bold">Forward-Thinking</h2>
                 </div>
               </div>
 
               <p className="text-[#C8CDD0]">
-                Highly capable GAIAs will be able to be monetized through the
-                Armory Marketplace (an Intelligence-as-a-Service platform) and
-                the Foundry Marketplace (a Transfer Learning as a Service
-                platform).
+              Highly capable GAIAs trained on the OGs network will be able to be used for a variety of use-cases, and potentially can be monetized directly when used by others as a service.
               </p>
             </div>
           </div>
@@ -443,15 +435,13 @@ const Home: NextPage = () => {
                   Community Collaboration
                 </h4>
                 <p className="text-lg text-slate-500">
-                  Foster innovation and collaboration on an unprecedented scale,
-                  challenging the monopolistic practices of tech giants.
+                  Foster collaboration on AI training an unprecedented scale, decentralizing high-compute models.
                 </p>
               </div>
               <div>
                 <h4 className="text-blue-500 text-xl  mb-0">Open Access</h4>
                 <p className="text-lg text-slate-500">
-                  Make AI technology openly accessible to all, promoting a more
-                  equitable future.
+                  Make the frontier of agentic AI accessible to anyone with a computer and a dream.
                 </p>
               </div>
             </div>
@@ -460,21 +450,13 @@ const Home: NextPage = () => {
             <div className="flex flex-col ">
               <div className="title-block">
                 <span className="text-[24px] lg:text-[32px]">
-                  <GaianText>Your AI, Your Way</GaianText>
+                  <GaianText>The Gaian Way</GaianText>
                 </span>
                 <h3 className="text-[24px] lg:text-[32px] font-bold">
-                Your AI, Your Way
+                The Gaian Way
                 </h3>
               </div>
-              <div>
-                <h4 className="text-blue-500 text-xl  mb-0">
-                  Minting and Ownership
-                </h4>
-                <p className="text-lg text-slate-500">
-                  Each OGs NFT initially serves as a Degen's Golden Ticket,
-                  representing ownership in this revolutionary project.
-                </p>
-              </div>
+
               <div>
                 <h4 className="text-blue-500 text-xl  mb-0">
                   AI Agent Training

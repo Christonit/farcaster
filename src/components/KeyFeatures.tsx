@@ -31,15 +31,8 @@ function KeyFeatures() {
   return (
     <>
       <div className="lg:flex items-end justify-between lg:mb-[32px]">
-        <div>
-          <span className="text-3xl lg:text-5xl">
-            <GaianText className="">Key Features</GaianText>
-          </span>
-          <h2 className="text-3xl lg:text-5xl font-semibold text-neutral-900">
-            Key Features
-          </h2>
-        </div>
-
+      
+{/* 
         <div className="lg:flex justify-between items-center hidden gap-[16px]">
           <button
             onClick={previous}
@@ -59,13 +52,68 @@ function KeyFeatures() {
             <img src="/images/arrow_forward.svg" alt="Arrow ight" />
 
           </button>
-        </div>
+        </div> */}
       </div>
 
+      <div>
+      <div>
+          <div className="flex flex-wrap xl:flex-nowrap justify-between">
+            <div className="left-block min-w-[300px] py-[24px] w-full lg:py-0">
+            <span className="text-3xl lg:text-5xl">
+            <GaianText className="">                Incentives and Rewards
+            </GaianText>
+          </span>
+              <h3 className=" text-[24px] mb-[32px] lg:text-[36px] font-semibold text-blue-500">
+                Incentives and Rewards
+              </h3>
+
+              <img
+                src="/images/gaias_infographics_5.png"
+                alt="Key Features"
+                className="mix-blend-color-burn w-full mr-auto max-w-[700px] xl:mt-[64px]"
+              />
+            </div>
+
+            <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px]  lg:pr-[32px]">
+              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
+                <h4 className="text-slate-900 text-2xl font-bold mb-0">
+                  Participate and Earn
+                </h4>
+                <p className="text-lg text-slate-500">
+                  Train agents to mastery in various games and skills to earn
+                  rewards.
+                </p>
+              </div>
+              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
+                <h4 className="text-slate-900 text-2xl font-bold mb-0">
+                  Governance and Control
+                </h4>
+                <p className="text-base text-slate-500">
+                  Influence which games and agents are incentivized through
+                  token ownership.
+                </p>
+              </div>
+              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
+                <h4 className="text-slate-900 text-2xl font-bold mb-0">
+                  Developer Opportunities
+                </h4>
+                <p className="text-base text-slate-500">
+                  AI engineers and software developers can contribute new
+                  models, agents, or games and earn rewards.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{/* 
       <Slider ref={sliderRef} {...settings}>
         <div>
           <div className="flex flex-wrap xl:flex-nowrap justify-between">
             <div className="left-block min-w-[300px] py-[24px] w-full lg:py-0">
+            <span className="text-3xl lg:text-5xl">
+            <GaianText className="">Key Features</GaianText>
+          </span>
               <h3 className=" text-[24px] lg:text-[36px] mb-[32px]  font-semibold text-blue-500">
                 The Power of GAIAs
               </h3>
@@ -109,54 +157,10 @@ function KeyFeatures() {
             </div>
           </div>
         </div>
-        <div>
-          <div className="flex flex-wrap xl:flex-nowrap justify-between">
-            <div className="left-block min-w-[300px] py-[24px] w-full lg:py-0">
-              <h3 className=" text-[24px] mb-[32px] lg:text-[36px] font-semibold text-blue-500">
-                Incentives and Rewards
-              </h3>
+        
+      </Slider> */}
 
-              <img
-                src="/images/gaias_infographics_5.png"
-                alt="Key Features"
-                className="mix-blend-color-burn w-full mr-auto max-w-[700px] xl:mt-[64px]"
-              />
-            </div>
-
-            <div className="righ-block flex flex-col md:px-[20px] xl:px-0 w-full gap-[20px] xl:max-w-[700px]  lg:pr-[32px]">
-              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
-                <h4 className="text-slate-900 text-2xl font-bold mb-0">
-                  Participate and Earn
-                </h4>
-                <p className="text-lg text-slate-500">
-                  Train agents to mastery in various games and skills to earn
-                  rewards.
-                </p>
-              </div>
-              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
-                <h4 className="text-slate-900 text-2xl font-bold mb-0">
-                  Governance and Control
-                </h4>
-                <p className="text-base text-slate-500">
-                  Influence which games and agents are incentivized through
-                  token ownership.
-                </p>
-              </div>
-              <div className="px-[20px] py-[20px] bg-slate-150 rounded-[12px] flex gap-[20px] flex-col">
-                <h4 className="text-slate-900 text-2xl font-bold mb-0">
-                  Developer Opportunities
-                </h4>
-                <p className="text-base text-slate-500">
-                  AI engineers and software developers can contribute new
-                  models, agents, or games and earn rewards.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Slider>
-
-      <div className="flex justify-center items-center lg:hidden gap-[32px] mt-[16px]">
+      {/* <div className="flex justify-center items-center lg:hidden gap-[32px] mt-[16px]">
         <button
           onClick={previous}
           className="px-2 w-[40px] h-[40px] flex justify-center  py-2 border-slate-900  border text-white rounded-full"
@@ -169,7 +173,7 @@ function KeyFeatures() {
         >
           <img src="/images/arrow_forward.svg" alt="Arrow ight" />
         </button>
-      </div>
+      </div> */}
     </>
   );
 }
