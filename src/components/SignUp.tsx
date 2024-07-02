@@ -18,11 +18,12 @@ function SignUpComponent({ className }: { className?: string }) {
             </div>
 
             <div className="mt-4 text-base leading-6 text-zinc-500 max-md:max-w-full">
-            Discover how you can participate in the OGs project and contribute to a better, more decentralized AI-driven world.
+              Discover how you can participate in the OGs project and contribute
+              to a better, more decentralized AI-driven world.
             </div>
             <form
               className="flex flex-col lg:flex-row p-[4px] mt-6 tracking-tight bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0"
-              action="https://forms.zohopublic.com/onchaingaias/form/EmailSubscription/formperma/j0sm4pKWnQ0WjSBWGkUX6b-_l8mH-_io-mgGl8o4OMk/htmlRecords/submit"
+              action="https://forms.zohopublic.com/onchaingaias1/form/OnchainSignUpForm/formperma/kHYKx_lKOJ9ou1eudV_IuhfK5dUaV8TFhIJs2M80vWA/htmlRecords/submit"
               name="form"
               id="form"
               method="POST"
@@ -45,7 +46,7 @@ function SignUpComponent({ className }: { className?: string }) {
                 className="flex flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-600 rounded-xl"
               >
                 <div className="text-base font-bold leading-6">
-                Build the Future 
+                  Build the Future
                 </div>
                 <svg
                   width="14"
