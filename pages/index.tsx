@@ -358,7 +358,7 @@ const Home: NextPage = () => {
               </div>
 
               <p className="text-[#C8CDD0]">
-              The system incentivizes widspread participation through rewards in the form of XP, directly translatable to future token rewards. XP is earned by training agents in various games and skills.
+              The system incentivizes widespread participation through rewards in the form of XP, directly translatable to future token rewards. XP is earned by training agents in various games and skills.
               </p>
             </div>
 
