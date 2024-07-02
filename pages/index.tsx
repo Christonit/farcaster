@@ -14,6 +14,9 @@ import GridGallery from "../src/components/grid-gallery";
 import FeaturesGrid from "../src/components/features-grid";
 import Link from "next/link";
 import anime from "animejs";
+import SignUpComponent from "../src/components/SignUp";
+import GaianText from "../src/components/GaianText";
+import KeyFeatures from "../src/components/KeyFeatures";
 
 export async function generateMetadata(): Promise<Metadata> {
   const frameTags = await getFrameMetadata(
@@ -163,47 +166,107 @@ const Home: NextPage = () => {
 
       <section className="bg-white py-[64px] relative h-[100vh] flex flex-col justify-center">
         <Container className="relative z-[1]">
-          <h1 className="gaian-title text-center drop-shadow opacity-0">
-            Onchain Gaias
-          </h1>
-          <h2 className="pf-title text-center drop-shadow mb-[32px] opacity-0">
-            [onchain gaias]
-          </h2>
+          <div className="w-full max-w-[1020px] mx-auto">
+            <h1 className="text-3xl lg:text-5xl leading-narrow  text-slate-900 text-center font-bold mb-[24px] lg:mb-[32px] ">
+              Welcome to the <br />
+              Onchain General Intelligence Network
+            </h1>
 
-          <div className="flex justify-center gap-[20px]">
+            <p className=" text-xl lg:text-2xl leading-normal text-slate-500 text-center mb-[24px] lg:mb-[32px]">
+            A revolutionary art project pushing technological boundaries and redefining ownership in the world of digital art and agentic AI
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-[20px] mb-[32px]">
+
+
             <Link
-              href="https://magiceden.io/collections/base/0xa449b4f43d9a33fcdcf397b9cc7aa909012709fd"
-              target="_blank"
-              className="bg-[#f2ede1] w-[48px] items-center flex justify-center hover:bg-white rounded-full p-[4px]"
+                href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
+                target="_blank"
+                className="link py-[6px] px-[20px]  w-full lg:w-auto flex flex-col justify-center rounded-[12px] shadow-lg border border-transparent font-bold bg-[#F2EDE1] hover:bg-[#ffffff] text-slate-900  min-w-[200px] py-[8px] text-center"
+              >
+                Learn More
+              </Link>
+
+            <form
+              className="flex flex-col w-full lg:w-auto lg:flex-row p-[4px] tracking-tight bg-blue-500 hover:bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0"
+              action="https://forms.zohopublic.com/onchaingaias/form/EmailSubscription/formperma/j0sm4pKWnQ0WjSBWGkUX6b-_l8mH-_io-mgGl8o4OMk/htmlRecords/submit"
+              name="form"
+              id="form"
+              method="POST"
+              acceptCharset="UTF-8"
+              encType="multipart/form-data"
             >
-              <img
-                src="/images/icons/magic-eden-icon.svg"
-                alt="Opensea Icon"
-                className="h-[20px] drop-shadow mx-auto"
+              <input type="hidden" name="zf_referrer_name" value="" />
+              <input type="hidden" name="zf_redirect_url" value="" />
+              <input type="hidden" name="zc_gad" value="" />
+              {/* eslint-disable-next-line  */}
+              <input
+                type="text"
+                name="Email"
+                maxLength={Number("255")}
+                placeholder="Email"
+                className="w-full lg:w-auto mb-[12px] lg:mb-0 grow justify-center items-start px-3 py-2 text-base leading-6 whitespace-nowrap bg-white rounded-[8px] text-zinc-800 w-fit max-md:pr-5"
               />
-            </Link>
-            <Link
-              href="https://warpcast.com/~/channel/ogs"
-              target="_blank"
-              className="bg-[#f2ede1] hover:bg-white rounded-full p-[4px]"
-            >
-              <img
-                src="/images/icons/warpcast-icon.svg"
-                alt="Opensea Icon"
-                className="h-[40px] drop-shadow rounded-full"
-              />
-            </Link>
-            <Link
-              href="https://twitter.com/onchaingaias"
-              target="_blank"
-              className="flex items-center bg-[#f2ede1] hover:bg-white w-[48px] justify-center rounded-full p-[4px]"
-            >
-              <img
-                src="/images/icons/x-icon.svg"
-                alt="Opensea Icon"
-                className="h-[20px] drop-shadow"
-              />
-            </Link>
+              <button
+                type="submit"
+                className="flex flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded-xl"
+              >
+                <div className="text-base font-bold leading-6">
+                Build the Future 
+                </div>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 0.320312L13.6797 7L7 13.6797L5.82812 12.5078L10.4766 7.82031H0.320312V6.17969H10.4766L5.82812 1.49219L7 0.320312Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </form>
+
+
+           
+            </div>
+            <div className="flex justify-center gap-[20px]">
+              <Link
+                href="https://magiceden.io/collections/base/0xa449b4f43d9a33fcdcf397b9cc7aa909012709fd"
+                target="_blank"
+                className="bg-[#f2ede1] w-[48px] items-center flex justify-center hover:bg-white rounded-full p-[4px]"
+              >
+                <img
+                  src="/images/icons/magic-eden-icon.svg"
+                  alt="Opensea Icon"
+                  className="h-[20px] drop-shadow mx-auto"
+                />
+              </Link>
+              <Link
+                href="https://warpcast.com/~/channel/ogs"
+                target="_blank"
+                className="bg-[#f2ede1] hover:bg-white rounded-full p-[4px]"
+              >
+                <img
+                  src="/images/icons/warpcast-icon.svg"
+                  alt="Opensea Icon"
+                  className="h-[40px] drop-shadow rounded-full"
+                />
+              </Link>
+              <Link
+                href="https://twitter.com/onchaingaias"
+                target="_blank"
+                className="flex items-center bg-[#f2ede1] hover:bg-white w-[48px] justify-center rounded-full p-[4px]"
+              >
+                <img
+                  src="/images/icons/x-icon.svg"
+                  alt="Opensea Icon"
+                  className="h-[20px] drop-shadow"
+                />
+              </Link>
+            </div>
           </div>
         </Container>
         <img
@@ -223,6 +286,278 @@ const Home: NextPage = () => {
           className="absolute top-0 left-0 bottom-0 right-0 mx-auto w-full h-[100vh] object-cover pointer-events-none z-0"
         />
       </section>
+
+      <section className="bg-slate-900 join-the-rev">
+        <Container>
+          <div className="flex mb-[32px] flex-col mx-auto max-w-[740px]">
+            <div className="text-center mb-[24px]  lg:mb-[32px]">
+              <span className="text-2xl lg:text-4xl">
+                <GaianText className="">Build the Future</GaianText>
+              </span>
+              <h2 className="text-2xl lg:text-4xl  text-[#C8CDD0]">
+                <b className="text-white">Build the Future </b> <br />
+                of Decentralized AI with <br className="block lg:hidden" />{" "}
+                Onchain Gaias (OGs)
+              </h2>
+            </div>
+
+            <p className="text-base text-[#C8CDD0] text-center">
+              Onchain Gaias aims to make advanced AI technology widely
+              accessible through a decentralized network of intelligent agents
+              called General Artificial Intelligence Agents (GAIAs)
+            </p>
+          </div>
+
+          <div className="text-white  grid lg:grid-cols-3 grid-rows-2 gap-[20px] max-w-[1024px] mx-auto">
+            {/* First Item: Spans 2 columns and 2 rows */}
+            <div className="bg-slate-600 p-6 rounded-lg shadow-md lg:col-span-1  lg:row-span-2 flex flex-col">
+              <div className="flex items-center mb-4 gap-[16px]">
+                <div className="w-[120px] rounded-full flex items-center justify-center">
+                  <img src="/images/gaias_infographics_1.png" />
+                </div>
+
+                <div className="block lg:hidden">
+                  <span className="text-[20px] lg:text-[24px] text-[#C8CDD0]">
+                    <GaianText>Innovative AI Integration</GaianText>
+                  </span>
+                  <h2 className="text-lg font-bold">
+                    Innovative AI Integration
+                  </h2>
+                </div>
+              </div>
+
+              <div className="hidden lg:block">
+                <span className="text-[20px] lg:text-[24px] text-[#C8CDD0]">
+                  <GaianText>Innovative AI Integration</GaianText>
+                </span>
+                <h2 className="text-lg font-bold mb-2">
+                  Innovative AI Integration
+                </h2>
+              </div>
+
+              <p className="text-[#C8CDD0]">
+                GAIAs are AI agents that can be trained by anyone through
+                onchain gameplay, with compute resources funded by player
+                transactions. OGs NFT holders have the exclusive ability to create these agents and benefit from community training.
+              </p>
+            </div>
+
+            {/* Second Item: Normal size */}
+            <div className="bg-slate-600 p-6 rounded-lg shadow-md flex flex-col lg:col-span-2">
+              <div className="flex items-center mb-4 gap-[16px]">
+                <div className="w-[120px] rounded-full flex items-center justify-center">
+                  <img src="/images/gaias_infographics_2.png" />
+                </div>
+
+                <div>
+                  <span className="text-[20px] lg:text-[24px] text-[#C8CDD0]">
+                    <GaianText>Decentralized Network</GaianText>
+                  </span>
+                  <h2 className="text-lg font-bold ">Decentralized Network</h2>
+                </div>
+              </div>
+
+              <p className="text-[#C8CDD0]">
+              The system incentivizes widspread participation through rewards in the form of XP, directly translatable to future token rewards. XP is earned by training agents in various games and skills.
+              </p>
+            </div>
+
+            {/* Third Item: Normal size */}
+            <div className="bg-slate-600 p-6 rounded-lg shadow-md flex flex-col lg:col-span-2">
+              <div className="flex items-center mb-4 gap-[16px]">
+                <div className="w-[120px] rounded-full flex items-center justify-center">
+                  <img src="/images/gaias_infographics_3.png" />
+                </div>
+
+                <div>
+                  <span className="text-[20px] lg:text-[24px] text-[#C8CDD0]">
+                    <GaianText>Forward-Thinking</GaianText>
+                  </span>
+                  <h2 className="text-lg font-bold">Forward-Thinking</h2>
+                </div>
+              </div>
+
+              <p className="text-[#C8CDD0]">
+              Highly capable GAIAs trained on the OGs network will be able to be used for a variety of use-cases, and potentially can be monetized directly when used by others as a service.
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-[#EDEFEA]">
+        <Container>
+          <KeyFeatures />
+        </Container>
+
+        <div className="mx-auto max-w-[1536px]">
+          <hr className="border-slate-300 border-1" />
+        </div>
+      </section>
+      <section className="selling-points bg-[#EDEFEA]">
+        <Container className="mx-auto w-full max-w-[912px] ">
+          <div className=" mb-[32px] text-center">
+            <div>
+              <span className="text-2xl lg:text-5xl">
+                <GaianText className="">Get Started with OGs</GaianText>
+              </span>
+              <h2 className="text-4xl lg:text-5xl font-semibold text-neutral-900">
+                Get Started with OGs
+              </h2>
+            </div>
+          </div>
+
+          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:flex-nowrap  lg:gap-[32px] mb-[32px]">
+            <div className="block-image max-w-[180px] lg:max-w-auto lg:min-w-[252px] mx-auto mb-[12px] lg:mb-0">
+              <img src="/images/gaias_infographics_6.png" className="  " />
+            </div>
+
+            <div className="flex flex-col gap-[16px]">
+              <div className="title-block">
+                <span className="text-[24px] lg:text-[32px]">
+                  <GaianText>How It Works</GaianText>
+                </span>
+                <h3 className="text-[24px] lg:text-[32px] font-bold">
+                  How It Works
+                </h3>
+              </div>
+              <div>
+                <h4 className="text-blue-500 text-xl  mb-0">
+                  Cutting-Edge AI Research
+                </h4>
+                <p className="text-lg text-slate-500">
+                  Leverage the latest advancements in multi-agent systems and
+                  decentralized computing.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-blue-500 text-xl  mb-0">
+                  Community Collaboration
+                </h4>
+                <p className="text-lg text-slate-500">
+                  Foster collaboration on AI training an unprecedented scale, decentralizing high-compute models.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-blue-500 text-xl  mb-0">Open Access</h4>
+                <p className="text-lg text-slate-500">
+                  Make the frontier of agentic AI accessible to anyone with a computer and a dream.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="px-[20px] py-[20px] lg:py-[32px] lg:px-[40px] bg-slate-150 rounded-[12px] flex flex-wrap lg:flex-nowrap lg:gap-[32px] ">
+            <div className="flex flex-col ">
+              <div className="title-block">
+                <span className="text-[24px] lg:text-[32px]">
+                  <GaianText>The Gaian Way</GaianText>
+                </span>
+                <h3 className="text-[24px] lg:text-[32px] font-bold">
+                The Gaian Way
+                </h3>
+              </div>
+
+              <div>
+                <h4 className="text-blue-500 text-xl  mb-0">
+                  AI Agent Training
+                </h4>
+                <p className="text-lg text-slate-500">
+                  Engage in onchain games to train your AI agents, contributing
+                  to the decentralized compute network.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-blue-500 text-xl  mb-0">
+                  Earn and Innovate
+                </h4>
+                <p className="text-lg text-slate-500">
+                  Benefit from training rewards and the potential revenue from
+                  deploying your agents in the marketplace.
+                </p>
+              </div>
+            </div>
+
+            <div className="block-image min-w-[252px]">
+              <img src="/images/gaias_infographics_7.png" className="" />
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-slate-900">
+        <Container className="relative z-[1]">
+          <div className="w-full  max-w-[912px] mx-auto">
+            <h2 className="text-4xl font-semibold  text-center mb-[32px] text-white">
+            Build the Future
+            </h2>
+
+            <p className="text-xl leading-normal text-[#C8CDD0] text-center mb-[32px]">
+              Be part of a grassroots movement to decentralize AI technology.
+              Whether you're an AI enthusiast, developer, or just curious about
+              the future of intelligent systems, Onchain Gaias offers a unique
+              opportunity to engage with and shape the AI landscape.
+            </p>
+          </div>
+
+          <SignUpComponent className="mx-auto" />
+        </Container>
+      </section>
+
+      <footer className=" pt-[12px] pb-[32px] lg:py-[12px] bg-slate-900">
+        <div className="w-full  px-[20px] mx-auto">
+          <div className="flex flex-wrap lg:flex-row  justify-center lg:justify-between">
+            <p className="text-base text-white">
+              © {new Date().getFullYear()} Onchain Gaias. All rights reserved.
+            </p>
+
+            <div className="flex gap-[16px] flex-wrap items-center">
+              <Link
+                href={
+                  "https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
+                }
+                target="_blank"
+                className="text-base text-white"
+              >
+                Read the Whitepaper
+              </Link>
+
+              <Link
+                href="https://magiceden.io/collections/base/0xa449b4f43d9a33fcdcf397b9cc7aa909012709fd"
+                target="_blank"
+                className="bg-[#f2ede1] w-[32px] h-[32px] items-center flex justify-center hover:bg-white rounded-full p-[4px]"
+              >
+                <img
+                  src="/images/icons/magic-eden-icon.svg"
+                  alt="Opensea Icon"
+                  className="h-[20px] drop-shadow mx-auto"
+                />
+              </Link>
+              <Link
+                href="https://warpcast.com/~/channel/ogs"
+                target="_blank"
+                className="bg-[#f2ede1] hover:bg-white rounded-full p-[4px]"
+              >
+                <img
+                  src="/images/icons/warpcast-icon.svg"
+                  alt="Opensea Icon"
+                  className="h-[28px] drop-shadow rounded-full"
+                />
+              </Link>
+              <Link
+                href="https://twitter.com/onchaingaias"
+                target="_blank"
+                className="flex items-center bg-[#f2ede1] hover:bg-white w-[32px] h-[32px] justify-center rounded-full p-[4px]"
+              >
+                <img
+                  src="/images/icons/x-icon.svg"
+                  alt="Opensea Icon"
+                  className="h-[20px] drop-shadow"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -63,7 +63,7 @@ body {
   font-size: 18px;
   padding: 0;
   margin: 0;
-  font-family: "Public Sans", sans-serif;
+  font-family: "PFDinDisplayPro";
 }
 
 a {
@@ -230,7 +230,7 @@ p {
 }
 
 .logo {
-  height: 32px;
+  height: 40px;
   width: auto;
   margin-right: 8px;
 }
@@ -709,6 +709,10 @@ p {
   height: max-content;
 }
 
+.gaian-font {
+  font-family: "GaianBasic";
+}
+
 .gaian-title {
   font-size: 2.75rem;
   font-family: "GaianBasic";
@@ -732,5 +736,32 @@ p {
 
   @include breakpoint(lg) {
     font-size: 2.5rem;
+  }
+}
+
+.selling-points {
+  background-image: url(/images/geometric-pattern.svg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+}
+
+.join-the-rev {
+  background-image: url(/images/bg-pattern.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.slick-slider {
+  @include max-breakpoint(md) {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+}
+.slick-initialized .slick-slide {
+  @include max-breakpoint(md) {
+    display: block;
+    padding: 0 16px;
   }
 }

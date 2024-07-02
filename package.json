@@ -1,7 +1,7 @@
 {
-  "name": "farcaster",
+  "name": "onchain-gaias",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,9 +15,12 @@
     "frog": "^0.5.5",
     "hono": "^4.0.10",
     "next": "^14.0.4",
+    "posthog-js": "^1.142.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
     "viem": "^2.7.3",
     "wagmi": "^2.5.5"
   },
@@ -25,6 +28,7 @@
     "@types/animejs": "^3.1.12",
     "@types/node": "^18.19.3",
     "@types/react": "^18.2.43",
+    "@types/react-slick": "^0.23.13",
     "autoprefixer": "^10.4.17",
     "eslint": "^8.15.0",
     "eslint-config-next": "^14.0.4",

@@ -11,15 +11,11 @@ const Header = () => {
   return (
     <header className="appHeader">
       <nav className="mainNav">
+        <a href="#" className="logoLink">
+          <img className="logo" src="/images/logo.png" alt="" />
+        </a>
         {/* <div className="navSection">
-          <a href="#" className="logoLink">
-            <img
-              className="logo"
-              src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-              alt=""
-            />
-            <span>Your Company</span>
-          </a>
+         
         </div>
 
         <button className="menuButton" onClick={toggleSidebar}>
@@ -55,7 +51,7 @@ const Header = () => {
           >
             Whitepaper
           </Link>
-          <ConnectButton />
+          {/* <ConnectButton /> */}
         </div>
       </nav>
 

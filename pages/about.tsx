@@ -267,7 +267,7 @@ const Home: NextPage = () => {
       </Container>
 
       <section className="py-[64px] bg-slate-100">
-        <div className="lg:container mx-auto px-[16px] lg:px-0">
+        <div className="lg:container mx-auto px-[16px] xl:px-0">
           <div className="flex flex-col justify-center items-start px-20 py-[32px] lg:py-[136px]  leading-6 bg-blue-500 rounded-[44px] max-md:px-5 cta-container">
             <div className="max-w-[660px] flex flex-col gap-[24px]">
               <h3 className="text-3xl lg:text-5xl font-semibold leading-narrow text-left text-white">
