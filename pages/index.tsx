@@ -173,13 +173,12 @@ const Home: NextPage = () => {
             </h1>
 
             <p className=" text-xl lg:text-2xl leading-normal text-slate-500 text-center mb-[24px] lg:mb-[32px]">
-            A revolutionary art project pushing technological boundaries and redefining ownership in the world of digital art and agentic AI
+              A revolutionary art project pushing technological boundaries and
+              redefining ownership in the world of digital art and agentic AI
             </p>
 
             <div className="flex flex-wrap justify-center gap-[20px] mb-[32px]">
-
-
-            <Link
+              <Link
                 href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
                 target="_blank"
                 className="link py-[6px] px-[20px]  w-full lg:w-auto flex flex-col justify-center rounded-[12px] shadow-lg border border-transparent font-bold bg-[#F2EDE1] hover:bg-[#ffffff] text-slate-900  min-w-[200px] py-[8px] text-center"
@@ -187,50 +186,48 @@ const Home: NextPage = () => {
                 Learn More
               </Link>
 
-            <form
-              className="flex flex-col w-full lg:w-auto lg:flex-row p-[4px] tracking-tight bg-blue-500 hover:bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0"
-              action="https://forms.zohopublic.com/onchaingaias/form/EmailSubscription/formperma/j0sm4pKWnQ0WjSBWGkUX6b-_l8mH-_io-mgGl8o4OMk/htmlRecords/submit"
-              name="form"
-              id="form"
-              method="POST"
-              acceptCharset="UTF-8"
-              encType="multipart/form-data"
-            >
-              <input type="hidden" name="zf_referrer_name" value="" />
-              <input type="hidden" name="zf_redirect_url" value="" />
-              <input type="hidden" name="zc_gad" value="" />
-              {/* eslint-disable-next-line  */}
-              <input
-                type="text"
-                name="Email"
-                maxLength={Number("255")}
-                placeholder="Email"
-                className="w-full lg:w-auto mb-[12px] lg:mb-0 grow justify-center items-start px-3 py-2 text-base leading-6 whitespace-nowrap bg-white rounded-[8px] text-zinc-800 w-fit max-md:pr-5"
-              />
-              <button
-                type="submit"
-                className="flex flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded-xl"
+              <form
+                className="flex flex-col w-full lg:w-auto lg:flex-row p-[4px] tracking-tight bg-blue-500 hover:bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0"
+                action="https://forms.zohopublic.com/onchaingaias1/form/OnchainSignUpForm/formperma/kHYKx_lKOJ9ou1eudV_IuhfK5dUaV8TFhIJs2M80vWA/htmlRecords/submit"
+                name="form"
+                id="form"
+                target="_blank"
+                method="POST"
+                acceptCharset="UTF-8"
+                encType="multipart/form-data"
               >
-                <div className="text-base font-bold leading-6">
-                Build the Future 
-                </div>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <input type="hidden" name="zf_referrer_name" value="" />
+                <input type="hidden" name="zf_redirect_url" value="" />
+                <input type="hidden" name="zc_gad" value="" />
+                {/* eslint-disable-next-line  */}
+                <input
+                  type="text"
+                  name="Email"
+                  maxLength={Number("255")}
+                  placeholder="Email"
+                  className="w-full lg:w-auto mb-[12px] lg:mb-0 grow justify-center items-start px-3 py-2 text-base leading-6 whitespace-nowrap bg-white rounded-[8px] text-zinc-800 w-fit max-md:pr-5"
+                />
+                <button
+                  type="submit"
+                  className="flex flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-500 hover:bg-blue-600 rounded-xl"
                 >
-                  <path
-                    d="M7 0.320312L13.6797 7L7 13.6797L5.82812 12.5078L10.4766 7.82031H0.320312V6.17969H10.4766L5.82812 1.49219L7 0.320312Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </form>
-
-
-           
+                  <div className="text-base font-bold leading-6">
+                    Build the Future
+                  </div>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 0.320312L13.6797 7L7 13.6797L5.82812 12.5078L10.4766 7.82031H0.320312V6.17969H10.4766L5.82812 1.49219L7 0.320312Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </form>
             </div>
             <div className="flex justify-center gap-[20px]">
               <Link
@@ -338,7 +335,8 @@ const Home: NextPage = () => {
               <p className="text-[#C8CDD0]">
                 GAIAs are AI agents that can be trained by anyone through
                 onchain gameplay, with compute resources funded by player
-                transactions. OGs NFT holders have the exclusive ability to create these agents and benefit from community training.
+                transactions. OGs NFT holders have the exclusive ability to
+                create these agents and benefit from community training.
               </p>
             </div>
 
@@ -358,7 +356,10 @@ const Home: NextPage = () => {
               </div>
 
               <p className="text-[#C8CDD0]">
-              The system incentivizes widespread participation through rewards in the form of XP, directly translatable to future token rewards. XP is earned by training agents in various games and skills.
+                The system incentivizes widespread participation through rewards
+                in the form of XP, directly translatable to future token
+                rewards. XP is earned by training agents in various games and
+                skills.
               </p>
             </div>
 
@@ -378,7 +379,9 @@ const Home: NextPage = () => {
               </div>
 
               <p className="text-[#C8CDD0]">
-              Highly capable GAIAs trained on the OGs network will be able to be used for a variety of use-cases, and potentially can be monetized directly when used by others as a service.
+                Highly capable GAIAs trained on the OGs network will be able to
+                be used for a variety of use-cases, and potentially can be
+                monetized directly when used by others as a service.
               </p>
             </div>
           </div>
@@ -435,13 +438,15 @@ const Home: NextPage = () => {
                   Community Collaboration
                 </h4>
                 <p className="text-lg text-slate-500">
-                  Foster collaboration on AI training an unprecedented scale, decentralizing high-compute models.
+                  Foster collaboration on AI training an unprecedented scale,
+                  decentralizing high-compute models.
                 </p>
               </div>
               <div>
                 <h4 className="text-blue-500 text-xl  mb-0">Open Access</h4>
                 <p className="text-lg text-slate-500">
-                  Make the frontier of agentic AI accessible to anyone with a computer and a dream.
+                  Make the frontier of agentic AI accessible to anyone with a
+                  computer and a dream.
                 </p>
               </div>
             </div>
@@ -453,7 +458,7 @@ const Home: NextPage = () => {
                   <GaianText>The Gaian Way</GaianText>
                 </span>
                 <h3 className="text-[24px] lg:text-[32px] font-bold">
-                The Gaian Way
+                  The Gaian Way
                 </h3>
               </div>
 
@@ -488,7 +493,7 @@ const Home: NextPage = () => {
         <Container className="relative z-[1]">
           <div className="w-full  max-w-[912px] mx-auto">
             <h2 className="text-4xl font-semibold  text-center mb-[32px] text-white">
-            Build the Future
+              Build the Future
             </h2>
 
             <p className="text-xl leading-normal text-[#C8CDD0] text-center mb-[32px]">

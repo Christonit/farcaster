@@ -17,6 +17,8 @@ function SignUpComponent({ className }: { className?: string }) {
               </h3>
             </div>
 
+            <div id="zf_div_ZEFo5wgHW_Jb-foQSlp_KnhT6uek-RNyU-gpUhN2HLM"></div>
+
             <div className="mt-4 text-base leading-6 text-zinc-500 max-md:max-w-full">
               Discover how you can participate in the OGs project and contribute
               to a better, more decentralized AI-driven world.
@@ -25,6 +27,7 @@ function SignUpComponent({ className }: { className?: string }) {
               className="flex flex-col lg:flex-row p-[4px] mt-6 tracking-tight bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0"
               action="https://forms.zohopublic.com/onchaingaias1/form/OnchainSignUpForm/formperma/kHYKx_lKOJ9ou1eudV_IuhfK5dUaV8TFhIJs2M80vWA/htmlRecords/submit"
               name="form"
+              target="_blank"
               id="form"
               method="POST"
               acceptCharset="UTF-8"
@@ -33,7 +36,6 @@ function SignUpComponent({ className }: { className?: string }) {
               <input type="hidden" name="zf_referrer_name" value="" />
               <input type="hidden" name="zf_redirect_url" value="" />
               <input type="hidden" name="zc_gad" value="" />
-              {/* eslint-disable-next-line  */}
               <input
                 type="text"
                 name="Email"
