@@ -186,7 +186,7 @@ const Home: NextPage = () => {
                 Learn More
               </Link>
 
-              <form
+              {/* <form
                 className="flex flex-col w-full lg:w-auto lg:flex-row p-[4px] tracking-tight bg-blue-500 hover:bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0"
                 action="https://forms.zohopublic.com/onchaingaias1/form/OnchainSignUpForm/formperma/kHYKx_lKOJ9ou1eudV_IuhfK5dUaV8TFhIJs2M80vWA/htmlRecords/submit"
                 name="form"
@@ -199,7 +199,6 @@ const Home: NextPage = () => {
                 <input type="hidden" name="zf_referrer_name" value="" />
                 <input type="hidden" name="zf_redirect_url" value="" />
                 <input type="hidden" name="zc_gad" value="" />
-                {/* eslint-disable-next-line  */}
                 <input
                   type="text"
                   name="Email"
@@ -227,7 +226,7 @@ const Home: NextPage = () => {
                     />
                   </svg>
                 </button>
-              </form>
+              </form> */}
             </div>
             <div className="flex justify-center gap-[20px]">
               <Link
