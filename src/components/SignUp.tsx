@@ -17,14 +17,39 @@ function SignUpComponent({ className }: { className?: string }) {
               </h3>
             </div>
 
+            <div id="zf_div_ZEFo5wgHW_Jb-foQSlp_KnhT6uek-RNyU-gpUhN2HLM"></div>
+
             <div className="mt-4 text-base leading-6 text-zinc-500 max-md:max-w-full">
               Discover how you can participate in the OGs project and contribute
               to a better, more decentralized AI-driven world.
             </div>
-            <form
+
+            <a
+              href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
+              target="_blank"
+              className="flex max-w-[240px] mt-[12px] flex-auto items-center gap-[8px] justify-center px-3 py-2 text-white bg-blue-600 rounded-xl"
+            >
+              <div className="text-base font-bold leading-6">
+                Build the Future
+              </div>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 0.320312L13.6797 7L7 13.6797L5.82812 12.5078L10.4766 7.82031H0.320312V6.17969H10.4766L5.82812 1.49219L7 0.320312Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            {/* <form
               className="flex flex-col lg:flex-row p-[4px] mt-6 tracking-tight bg-blue-600 rounded-[12px] mb-[32px] lg:mb-0"
               action="https://forms.zohopublic.com/onchaingaias1/form/OnchainSignUpForm/formperma/kHYKx_lKOJ9ou1eudV_IuhfK5dUaV8TFhIJs2M80vWA/htmlRecords/submit"
               name="form"
+              target="_blank"
               id="form"
               method="POST"
               acceptCharset="UTF-8"
@@ -33,7 +58,6 @@ function SignUpComponent({ className }: { className?: string }) {
               <input type="hidden" name="zf_referrer_name" value="" />
               <input type="hidden" name="zf_redirect_url" value="" />
               <input type="hidden" name="zc_gad" value="" />
-              {/* eslint-disable-next-line  */}
               <input
                 type="text"
                 name="Email"
@@ -61,7 +85,7 @@ function SignUpComponent({ className }: { className?: string }) {
                   />
                 </svg>
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
         <div className="flex flex-col ml-5 w-[29%] max-md:ml-0 max-md:w-full">
