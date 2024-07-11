@@ -40,10 +40,24 @@ const Header = () => {
             target="_blank"
             className="link py-[6px] px-[20px] rounded-[12px] shadow-lg font-bold "
           >
+            Roadmap
+          </Link>
+          <Link
+            href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
+            target="_blank"
+            className="link py-[6px] px-[20px] rounded-[12px] shadow-lg font-bold "
+          >
             Whitepaper
           </Link>
         </div>
         <div className="wallet-section hideOnMobile ml-auto flex gap-[12px]">
+          <Link
+            href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
+            target="_blank"
+            className="link py-[6px] px-[20px] rounded-[12px] shadow-lg font-bold "
+          >
+            Roadmap
+          </Link>
           <Link
             href="https://zora.co/collect/base:0x3a56ed006593740eb90e0dc9c45005933d27c8a2/2"
             target="_blank"
