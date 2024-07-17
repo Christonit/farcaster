@@ -170,17 +170,17 @@ const Home: NextPage = () => {
             <div className=" mb-[32px] text-center">
               <div>
                 <span className="text-2xl lg:text-5xl">
-                  <GaianText className="text-slate-500">
+                  <GaianText className="text-slate-300">
                     Unleash your inner CEO
                   </GaianText>
                 </span>
-                <h1 className="text-4xl lg:text-5xl font-semibold text-neutral-900">
+                <h1 className="text-4xl lg:text-5xl font-semibold text-slate-100">
                   Unleash your inner CEO
                 </h1>
               </div>
             </div>
 
-            <p className=" text-xl lg:text-2xl leading-normal text-slate-500 text-center mb-[24px] lg:mb-[32px]">
+            <p className=" text-xl lg:text-2xl leading-normal text-slate-300 text-center mb-[24px] lg:mb-[32px] drop-shadow-md">
               Make your way from the shaved hamster to the grandmaster CEO of
               the tier-1 crypto exchange Buy upgrades, complete quests, invite
               friends and become the best
@@ -276,17 +276,7 @@ const Home: NextPage = () => {
         </Container>
         <img
           sizes="(max-width: 3840px) 100vw, 3840px"
-          srcSet="
-/images/banner/website_gaias_background_01_swj9hd_c_scale,w_360.webp 360w,
-/images/banner/website_gaias_background_01_swj9hd_c_scale,w_1659.webp 1659w,
-/images/banner/website_gaias_background_01_swj9hd_c_scale,w_2167.webp 2167w,
-/images/banner/website_gaias_background_01_swj9hd_c_scale,w_2823.webp 2823w,
-/images/banner/website_gaias_background_01_swj9hd_c_scale,w_3046.webp 3046w,
-/images/banner/website_gaias_background_01_swj9hd_c_scale,w_3180.webp 3180w,
-/images/banner/website_gaias_background_01_swj9hd_c_scale,w_3517.webp 3517w,
-/images/banner/website_gaias_background_01_swj9hd_c_scale,w_3832.webp 3832w,
-/images/banner/website_gaias_background_01_swj9hd_c_scale,w_3840.webp 3840w"
-          src="/images/banner/website_gaias_background_01_swj9hd_c_scale,w_3840.webp"
+          src="/images/banner/roadmap-bg.png"
           alt="banner-image"
           className="absolute top-0 left-0 bottom-0 right-0 mx-auto w-full h-[100vh] object-cover pointer-events-none z-0"
         />

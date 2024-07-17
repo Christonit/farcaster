@@ -11,28 +11,9 @@ const Header = () => {
   return (
     <header className="appHeader">
       <nav className="mainNav">
-        <a href="#" className="logoLink">
+        <Link href="/" className="logoLink">
           <img className="logo" src="/images/logo.png" alt="" />
-        </a>
-        {/* <div className="navSection">
-         
-        </div>
-
-        <button className="menuButton" onClick={toggleSidebar}>
-          Menu
-        </button>
-
-        <div className="navLinks hideOnMobile">
-          <a href="#" className="navItem">
-            Features
-          </a>
-          <a href="#" className="navItem">
-            Marketplace
-          </a>
-          <a href="#" className="navItem">
-            Company
-          </a>
-        </div> */}
+        </Link>
 
         <div className="wallet-section  hideOnDesktop ml-auto flex gap-[12px]">
           <Link
